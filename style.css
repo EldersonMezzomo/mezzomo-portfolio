@@ -567,14 +567,16 @@ footer p {
     }
 
     .contact-icons {
-        flex-direction: column;
-        /* Empilha os ícones de contato em coluna */
-        align-items: center;
-        /* Centraliza os ícones */
+        flex-direction: row; /* Mantém os ícones em linha */
+        justify-content: space-around; /* Distribui os ícones uniformemente */
+        align-items: center; /* Centraliza verticalmente */
     }
 
     .contact-icons li {
-        margin-bottom: 15px;
-        /* Adiciona margem inferior entre os ícones */
+        margin-bottom: 0; /* Remove a margem inferior */
+    }
+
+    .contact-icons li a {
+        font-size: 1.5rem; /* Reduz o tamanho dos ícones */
     }
 }
