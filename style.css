@@ -13,40 +13,53 @@
     --text-color: #666;
     --font-family: "KorbRegular", "Source Sans Pro", Helvetica, sans-serif;
     --font-size-base: 1.2rem;
-    --font-size-lg: 2.5em;
+    /* Valor base de fonte em rem */
+    --font-size-lg: 2.5rem;
+    /* Valor relativo para fonte grande */
+    --container-padding: 2%;
+    /* Padding do container em % */
+    --container-max-width: 60rem;
+    /* Largura máxima do container em rem */
+    --header-padding: 0.5rem 0;
+    /* Padding do header em rem */
+    --section-margin: 2.5rem 0;
+    /* Margem das seções em rem */
 }
-
-html {
-    scroll-behavior: smooth; /* Ativa a rolagem suave para toda a página */
-}
-
 
 /* Configurações gerais */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: var(--font-family);
     background-color: var(--background-color);
     color: var(--text-color);
     line-height: 1.6;
     font-size: var(--font-size-base);
-    /* Aqui você aplica o tamanho base da fonte */
     padding: 0;
     text-rendering: optimizeLegibility;
+    text-align: justify;
 }
 
-/* Container padrão com espaçamento lateral */
+/* Classe destaque */
+.highlight {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/* Container padrão */
 .container {
-    width: 50%;
-    /* Conteúdo ocupará 50% da tela */
-    margin: auto;
-    /* Centraliza o conteúdo */
-    padding: 0 1.4rem;
+    width: 100%;
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
 }
-
 
 /* Cabeçalho fixo */
 header {
     background-color: var(--primary-color);
-    padding: 20px 0;
+    padding: var(--header-padding);
     position: fixed;
     width: 100%;
     top: 0;
@@ -55,42 +68,42 @@ header {
 }
 
 header .container {
+    width: 100%;
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
     display: flex;
     justify-content: space-between;
-    /* Distribui espaço entre o nome e os links de navegação */
     align-items: center;
-    /* Alinha verticalmente no centro */
 }
 
 header .logo {
-    margin-left: 20px;
-    /* Espaçamento à esquerda para o logo */
+    margin-left: 0;
 }
 
 header .logo h1 {
-    font-size: 2.2em;
+    font-size: 2.2rem;
+    /* Substitui por valor em rem */
     color: #fff;
     margin: 0;
 }
 
 .logo h1 {
     font-family: 'Audiowide', 'Arial', sans-serif;
-    /* Use uma fonte sans-serif moderna */
-    font-size: 2em;
+    font-size: 2rem;
+    /* Substitui por valor em rem */
     font-weight: bold;
     background: linear-gradient(to right, var(--text-color), var(--background-color));
-    /* Gradiente de branco para cinza */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     color: transparent;
 }
 
-/* Código novo para remover sublinhado e alterar cor no hover */
 .logo a {
     text-decoration: none;
-    color: var(--primary-color); /* Cor padrão do logotipo */
-    transition: color 0.3s ease; /* Transição suave ao mudar de cor */
+    color: var(--primary-color);
+    transition: color 0.3s ease;
 }
 
 .logo a:hover h1 {
@@ -100,44 +113,48 @@ header .logo h1 {
     background-clip: text;
 }
 
-
-
 header nav ul {
     list-style: none;
     display: flex;
     margin: 0;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    padding: 0;
 }
 
 header nav ul li {
-    margin-left: 20px;
+    margin-left: 1.25rem;
+    /* Substitui por valor em rem */
 }
 
 header nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 0.9em;
+    font-size: 1rem;
+    /* Substitui por valor em rem */
 }
 
 header nav ul li a:hover {
     color: var(--secondary-color);
 }
 
-
 /* Estilos para as seções */
 section {
-    margin: 40px 0;
+    margin: var(--section-margin);
     scroll-margin-top: 140px;
-    /* Adiciona espaço para evitar sobreposição */
 }
 
 h2 {
     font-size: var(--font-size-lg);
     font-weight: 400;
     color: var(--primary-color);
-    margin-top: 150px;
-    margin-bottom: 50px;
+    margin-top: 9rem;
+    /* Substitui por valor em rem */
+    margin-bottom: 3rem;
+    /* Substitui por valor em rem */
     position: relative;
-    padding-bottom: 10px;
+    padding-bottom: 0.625rem;
+    /* Substitui por valor em rem */
     display: flex;
     align-items: center;
 }
@@ -145,55 +162,181 @@ h2 {
 h2::after {
     content: '';
     flex-grow: 1;
-    margin-left: 20px;
-    /* Espaçamento entre o texto e a linha */
-    height: 1px;
-    /* Espessura da linha */
+    margin-left: 1.25rem;
+    /* Substitui por valor em rem */
+    height: 0.0625rem;
+    /* Substitui por valor em rem */
     background-color: var(--primary-color);
-    /* Cor da linha */
 }
-
 
 /* Estilos para "Über mich" */
 .about-content {
     display: flex;
-    align-items: center;
-    margin-top: 20px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 .profile-photo img {
-    max-width: 150px;
+    max-width: 9.375rem;
+    /* Substitui por valor em rem */
     border-radius: 50%;
-    margin-right: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 1.25rem;
+    /* Substitui por valor em rem */
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    /* Substitui por valores em rem */
 }
 
 .about-text {
-    max-width: 600px;
+    max-width: 100%;
+    flex: 2;
+    margin-left: 1.25rem;
+    /* Substitui por valor em rem */
 }
-
 
 /* Estilização geral para os links */
 ul li a {
     color: var(--primary-color);
-    /* Usar a cor primária definida nas variáveis */
     text-decoration: none;
-    /* Remove o sublinhado dos links */
     font-weight: bold;
-    /* Deixa o texto em negrito */
     transition: color 0.3s ease;
-    /* Adiciona uma transição suave ao passar o mouse */
 }
 
 ul li a:hover {
     color: var(--secondary-color);
-    /* Muda a cor ao passar o mouse */
 }
 
+/* Customização dos bullets */
+ul.custom-bullets {
+    list-style-type: none;
+    padding-left: 1.25rem;
+    /* Substitui por valor em rem */
+}
+
+ul.custom-bullets li {
+    position: relative;
+}
+
+ul.custom-bullets li::before {
+    content: "•";
+    position: absolute;
+    left: -1.25rem;
+    /* Substitui por valor em rem */
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    /* Substitui por valor em rem */
+}
+
+/* Estilos para a seção Projekte */
+.project {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 5rem;
+    /* Substitui por valor em rem */
+}
+
+.project-image {
+    flex: 1;
+}
+
+.project-image img {
+    max-width: 100%;
+    border-radius: 0.5rem;
+    /* Substitui por valor em rem */
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    /* Substitui por valores em rem */
+    transition: transform 0.3s ease;
+}
+
+.project-image img:hover {
+    transform: scale(1.05);
+}
+
+.project-details {
+    flex: 2;
+    margin-left: 1.25rem;
+    /* Substitui por valor em rem */
+}
+
+.project-details h3 {
+    font-size: 1.5rem;
+    /* Substitui por valor em rem */
+    margin-bottom: 0.625rem;
+    /* Substitui por valor em rem */
+    color: var(--primary-color);
+}
+
+.project-details h3 a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.project-details h3 a:hover {
+    color: var(--secondary-color);
+}
+
+.project-details p {
+    margin-bottom: 0.9375rem;
+    /* Substitui por valor em rem */
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.project-description {
+    max-height: 6rem;
+    /* Substitui por valor em rem */
+    overflow: hidden;
+    position: relative;
+    transition: max-height 0.3s ease;
+}
+
+.project-description.expanded {
+    max-height: none;
+}
+
+.read-more-btn {
+    background-color: transparent;
+    border: none;
+    color: var(--primary-color);
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 0.625rem;
+    /* Substitui por valor em rem */
+}
+
+.read-more-btn:hover {
+    color: var(--secondary-color);
+}
+
+.project-buttons {
+    display: flex;
+    gap: 0.625rem;
+    /* Substitui por valor em rem */
+}
+
+.project-buttons .btn {
+    flex: 1;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 0.625rem 0.9375rem;
+    /* Substitui por valores em rem */
+    text-decoration: none;
+    border-radius: 0.3125rem;
+    /* Substitui por valor em rem */
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.project-buttons .btn:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Estilos para a seção Kontakt */
 .contact-icons {
     display: flex;
     justify-content: space-around;
-    margin-top: 20px;
+    margin-top: 2.5rem;
+    /* Substitui por valor em rem */
 }
 
 .contact-icons li {
@@ -203,8 +346,8 @@ ul li a:hover {
 .contact-icons li a {
     text-decoration: none;
     color: var(--primary-color);
-    font-size: 2.5em;
-    /* Tamanho dos ícones */
+    font-size: 2.5rem;
+    /* Substitui por valor em rem */
     position: relative;
 }
 
@@ -214,23 +357,31 @@ ul li a:hover {
 
 .contact-icons li a[title]:hover::after {
     content: attr(title);
-    /* Exibe o número de telefone ao passar o mouse */
     position: absolute;
-    top: 50px;
-    /* Ajuste a posição conforme necessário */
+    top: 3.125rem;
+    /* Substitui por valor em rem */
     left: 50%;
     transform: translateX(-50%);
     background: rgba(0, 0, 0, 0.7);
     color: #fff;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 0.9em;
+    padding: 0.3125rem 0.625rem;
+    /* Substitui por valores em rem */
+    border-radius: 0.3125rem;
+    /* Substitui por valor em rem */
+    font-size: 0.9rem;
+    /* Substitui por valor em rem */
     white-space: nowrap;
     z-index: 10;
 }
 
+/* Estilos para a seção Downloads */
+#downloads p,
+#downloads ul li {
+    line-height: 3;
+    margin-bottom: 0.625rem;
+    /* Substitui por valor em rem */
+}
 
-/* Estilos para os links de download */
 #downloads a {
     text-decoration: none;
     color: var(--primary-color);
@@ -241,20 +392,189 @@ ul li a:hover {
     color: #006b8b;
 }
 
+ul.download-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul.download-list li {
+    margin-bottom: 0.9375rem;
+    /* Substitui por valor em rem */
+}
+
 /* Rodapé minimalista */
 footer {
     background-color: var(--primary-color);
     color: #fff;
-    padding: 20px 0;
-    /* Ajusta o padding conforme necessário */
+    padding: 1.25rem 0;
+    /* Substitui por valor em rem */
     text-align: center;
     width: 100%;
     position: relative;
     margin: 0;
-    margin-top: 250px;
+    margin-top: 21.875rem;
+    /* Substitui por valor em rem */
 }
 
 footer p {
     margin: 0;
-    font-size: 0.9em;
+    font-size: 0.9rem;
+}
+
+
+/* Estilos para o botão de menu hambúrguer */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.hamburger span {
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+/* Media queries para telas de até 768px (Tablets) */
+@media (max-width: 768px) {
+    /* Exibe o botão de menu hambúrguer em telas pequenas */
+    .hamburger {
+        display: flex;
+    }
+
+    /* Oculta o menu de navegação por padrão */
+    header nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: var(--primary-color);
+        width: 200px;
+        border-radius: 5px;
+        padding: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Exibe o menu de navegação quando ativo */
+    header nav ul.active {
+        display: flex;
+    }
+
+    header nav ul li {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .container {
+        padding: 0 10px;
+        /* Reduz o padding do container */
+    }
+
+    header .container {
+        padding: 0 10px;
+        /* Reduz o padding do container no header */
+    }
+
+    h2 {
+        font-size: 2rem;
+        /* Ajusta o tamanho da fonte */
+        margin-top: 100px;
+        /* Ajusta a margem superior */
+        margin-bottom: 30px;
+        /* Ajusta a margem inferior */
+    }
+
+    .project {
+        flex-direction: column;
+        /* Alinha os elementos em coluna */
+    }
+
+    .project-details {
+        margin-left: 0;
+        /* Remove a margem à esquerda */
+    }
+
+    .about-content {
+        flex-direction: column;
+        /* Alinha o conteúdo em coluna */
+        align-items: center;
+        /* Centraliza os itens */
+    }
+
+    .profile-photo img {
+        margin-right: 0;
+        /* Remove a margem direita da imagem */
+        margin-bottom: 20px;
+        /* Adiciona uma margem inferior */
+    }
+
+    header nav ul {
+        flex-direction: column;
+        /* Empilha os itens do menu verticalmente */
+        align-items: flex-start;
+        /* Alinha à esquerda */
+    }
+
+    header nav ul li {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+
+/* Media queries para telas de até 414px (Smartphones) */
+@media (max-width: 414px) {
+    .container {
+        padding: 0 5px;
+        /* Reduz ainda mais o padding do container */
+    }
+
+    header .container {
+        padding: 0 5px;
+        /* Reduz o padding do container no header */
+    }
+
+    h2 {
+        font-size: 1.8rem;
+        /* Ajusta o tamanho da fonte */
+        margin-top: 80px;
+        /* Ajusta a margem superior */
+        margin-bottom: 20px;
+        /* Ajusta a margem inferior */
+    }
+
+    .project-buttons .btn {
+        padding: 10px 5px;
+        /* Ajusta o padding dos botões */
+    }
+
+    .project-description {
+        max-height: 4.5rem;
+        /* Ajusta a altura máxima da descrição */
+    }
+
+    .about-content {
+        padding: 0 10px;
+        /* Adiciona padding à seção sobre mim */
+    }
+
+    .contact-icons {
+        flex-direction: column;
+        /* Empilha os ícones de contato em coluna */
+        align-items: center;
+        /* Centraliza os ícones */
+    }
+
+    .contact-icons li {
+        margin-bottom: 15px;
+        /* Adiciona margem inferior entre os ícones */
+    }
 }
