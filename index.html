@@ -27,13 +27,30 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="#about">Über mich</a></li>
-                    <li><a href="#fertigkeiten">Fertigkeiten</a></li>
-                    <li><a href="#projekte">Projekte</a></li>
-                    <li><a href="#kontakt">Kontakt</a></li>
-                    <li><a href="#downloads">Downloads</a></li>
+                    <li><a id="nav-about" href="#about">Über mich</a></li>
+                    <li><a id="nav-fertigkeiten" href="#fertigkeiten">Fertigkeiten</a></li>
+                    <li><a id="nav-projekte" href="#projekte">Projekte</a></li>
+                    <li><a id="nav-kontakt" href="#kontakt">Kontakt</a></li>
+                    <li><a id="nav-downloads" href="#downloads">Downloads</a></li>
                 </ul>
             </nav>
+            <div class="language-selector">
+                <button id="current-lang" class="lang-btn">
+                    <img src="assets/icons/de.png" alt="DE">
+                </button>
+                <div id="lang-options" class="lang-options">
+                    <button id="de" class="lang-btn">
+                        <img src="assets/icons/de.png" alt="DE">
+                    </button>
+                    <button id="en" class="lang-btn">
+                        <img src="assets/icons/en.png" alt="EN">
+                    </button>
+                    <button id="pt" class="lang-btn">
+                        <img src="assets/icons/pt.png" alt="PT">
+                    </button>
+                </div>
+            </div>
+
             <!-- Botão do menu hambúrguer -->
             <button class="hamburger" id="hamburger-btn">
                 <span></span>
@@ -47,28 +64,30 @@
     <main>
         <!-- Seção Über mich -->
         <section id="about" class="container">
-            <h2>Über mich</h2>
+            <h2 id="about-title">Über mich</h2>
             <div class="about-content">
                 <div class="profile-photo">
                     <img src="assets/profile-photo.png" alt="Elderson Luciano Mezzomo" />
                 </div>
                 <div class="about-text">
-                    <p>Ich bin <span class="highlight">Elderson Luciano Mezzomo</span>, ein engagierter und kreativer
+                    <p id="about-text">Ich bin <span class="highlight">Elderson Luciano Mezzomo</span>, ein engagierter
+                        und kreativer
                         Frontend-Entwickler mit einer Leidenschaft für <span class="highlight">JavaScript, HTML5</span>
                         und <span class="highlight">CSS3</span>. Ich habe eine einzigartige Kombination aus Erfahrung in
                         der Führung von Teams, analytischem Denken und fundierten Kenntnissen in der <span
                             class="highlight">Frontend-Entwicklung</span>. Mit Leidenschaft für exakte Wissenschaften
                         habe ich fundierte Fähigkeiten in der Frontend-Entwicklung erworben und strebe nun danach, meine
                         <span class="highlight">technischen Fähigkeiten</span> in einem dynamischen und innovativen
-                        Umfeld weiterzuentwickeln.</p>
+                        Umfeld weiterzuentwickeln.
+                    </p>
                 </div>
             </div>
         </section>
 
         <!-- Seção Fertigkeiten -->
         <section id="fertigkeiten" class="container">
-            <h2>Fertigkeiten</h2>
-            <ul class="custom-bullets">
+            <h2 id="skills-title">Fertigkeiten</h2>
+            <ul id="skills-list" class="custom-bullets">
                 <li>Frontend-Entwicklung: JavaScript, HTML5, CSS3</li>
                 <li>Design-Tools: Figma, Canva, Adobe Photoshop, Adobe Illustrator</li>
                 <li>Projektmanagement und agile Methoden: Scrum (Certified Scrum Master), Kanban</li>
@@ -79,7 +98,7 @@
 
         <!-- Seção Projekte -->
         <section id="projekte" class="container">
-            <h2>Projekte</h2>
+            <h2 id="projects-title">Projekte</h2>
 
             <div class="project">
                 <div class="project-image">
@@ -91,7 +110,8 @@
                     <h3><a href="https://eldersonmezzomo.github.io/Central_Caixa_HTML/" target="_blank">Central
                             CAIXA</a></h3>
                     <div class="project-description">
-                        <p>Central CAIXA ist eine App, die alle verfügbaren Anwendungen der Caixa Econômica Federal an
+                        <p id="project-1-desc">Central CAIXA ist eine App, die alle verfügbaren Anwendungen der Caixa
+                            Econômica Federal an
                             einem Ort vereint. Kunden können über die Central CAIXA schnell auf alle Caixa-Apps
                             zugreifen. Wenn eine App farbig angezeigt wird, ist sie bereits auf dem Gerät installiert.
                             Grau hinterlegte Apps deuten darauf hin, dass die Anwendung noch nicht installiert ist.
@@ -117,7 +137,8 @@
                 </div>
                 <div class="project-details">
                     <h3><a href="https://example.com/project2" target="_blank">Projekt 2</a></h3>
-                    <p>Kurze Beschreibung des Projekts 2. Dieses Projekt konzentriert sich auf ...</p>
+                    <p id="project-2-desc">Kurze Beschreibung des Projekts 2. Dieses Projekt konzentriert sich auf ...
+                    </p>
                     <div class="project-buttons">
                         <a href="https://github.com/EldersonMezzomo/project2" target="_blank" class="btn">Code</a>
                         <a href="https://example.com/project2" target="_blank" class="btn">Ansehen</a>
@@ -133,7 +154,8 @@
                 </div>
                 <div class="project-details">
                     <h3><a href="https://example.com/project3" target="_blank">Projekt 3</a></h3>
-                    <p>Kurze Beschreibung des Projekts 3. Dieses Projekt konzentriert sich auf ...</p>
+                    <p id="project-3-desc">Kurze Beschreibung des Projekts 3. Dieses Projekt konzentriert sich auf ...
+                    </p>
                     <div class="project-buttons">
                         <a href="https://github.com/EldersonMezzomo/project3" target="_blank" class="btn">Code</a>
                         <a href="https://example.com/project3" target="_blank" class="btn">Ansehen</a>
@@ -144,8 +166,8 @@
 
         <!-- Seção Kontakt -->
         <section id="kontakt" class="container">
-            <h2>Kontakt</h2>
-            <p>Sie können mich über die folgenden Kanäle erreichen:</p>
+            <h2 id="contact-title">Kontakt</h2>
+            <p id="contact-text">Sie können mich über die folgenden Kanäle erreichen:</p>
             <ul class="contact-icons">
                 <li>
                     <a href="tel:+4916092468671" title="+49 160 9246 8671">
@@ -172,15 +194,15 @@
 
         <!-- Seção Downloads -->
         <section id="downloads" class="container">
-            <h2>Downloads</h2>
-            <p>Hier können Sie meinen Lebenslauf und meine Zertifikate herunterladen:</p>
+            <h2 id="downloads-title">Downloads</h2>
+            <p id="downloads-text">Hier können Sie meinen Lebenslauf und meine Zertifikate herunterladen:</p>
             <ul class="download-list">
-                <li>
+                <li id="download-resume">
                     <a href="assets/Bewerbung_Frontend_Entwickler_Elderson_Luciano_Mezzomo.pdf" download>
                         - Lebenslauf herunterladen (PDF)
                     </a>
                 </li>
-                <li>
+                <li id="download-certificates">
                     <a href="assets/Hochschulabschluss.zip" download>
                         - Zertifikate herunterladen (ZIP)
                     </a>
@@ -191,7 +213,8 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Elderson Luciano Mezzomo - Leidenschaftlicher Frontend-Entwickler aus Marburg, Deutschland.</p>
+        <p id="footer-text">&copy; 2024 Elderson Luciano Mezzomo - Leidenschaftlicher Frontend-Entwickler aus Marburg,
+            Deutschland.</p>
     </footer>
 
     <!-- Script -->
