@@ -40,8 +40,8 @@
         "title": "Downloads",
         "text": "Aqui você pode baixar meu currículo e certificados:",
         "items": {
-            "resume": "Baixar Currículo (PDF)",
-            "certificates": "Baixar Certificados (ZIP)"
+            "resume": "- Baixar documentos de inscrição (PDF)",
+            "certificates": "- Baixar Diplomas e Certificados (ZIP)"
         }
     },
     "footer": {

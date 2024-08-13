@@ -40,8 +40,8 @@
         "title": "Downloads",
         "text": "Here you can download my resume and certificates:",
         "items": {
-            "resume": "Download Resume (PDF)",
-            "certificates": "Download Certificates (ZIP)"
+            "resume": "- Download application documents (PDF)",
+            "certificates": "- Download diplomas and certificates (ZIP)"
         }
     },
     "footer": {

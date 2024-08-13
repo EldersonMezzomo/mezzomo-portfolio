@@ -40,8 +40,8 @@
         "title": "Downloads",
         "text": "Hier können Sie meinen Lebenslauf und meine Zertifikate herunterladen:",
         "items": {
-            "resume": "Lebenslauf herunterladen (PDF)",
-            "certificates": "Zertifikate herunterladen (ZIP)"
+            "resume": "- Bewerbungsunterlagen herunterladen (PDF)",
+            "certificates": "- Diplome und Zertifikate herunterladen (ZIP)"
         }
     },
     "footer": {
