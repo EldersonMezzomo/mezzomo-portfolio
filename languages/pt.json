@@ -1,50 +1,57 @@
 {
-    "nav": {
-        "about": "Sobre Mim",
-        "fertigkeiten": "Habilidades",
-        "projekte": "Projetos",
-        "kontakt": "Contato",
-        "downloads": "Downloads"
+  "nav": {
+    "about": "Sobre Mim",
+    "fertigkeiten": "Habilidades",
+    "projekte": "Projetos",
+    "kontakt": "Contato",
+    "downloads": "Downloads"
+  },
+  "about": {
+    "title": "Sobre Mim",
+    "text": "Eu sou Elderson Luciano Mezzomo, um desenvolvedor Frontend comprometido e criativo com paixão por JavaScript, HTML5 e CSS3. Possuo uma combinação única de experiência em liderança de equipes, pensamento analítico e conhecimento aprofundado em desenvolvimento frontend. Apaixonado pelas ciências exatas, adquiri habilidades sólidas em desenvolvimento frontend e agora busco evoluir minhas capacidades técnicas em um ambiente dinâmico e inovador."
+  },
+  "skills": {
+    "title": "Habilidades",
+    "skill1": "Desenvolvimento Frontend: JavaScript, HTML5, CSS3",
+    "skill2": "Ferramentas de Design: Figma, Canva, Adobe Photoshop, Adobe Illustrator",
+    "skill3": "Gestão de Projetos e Métodos Ágeis: Scrum, Kanban",
+    "skill4": "Resolução de Problemas e Habilidades Analíticas",
+    "skill5": "Software e Ferramentas: Git, VS Code, Google Cloud"
+  },
+  "projects": {
+    "title": "Projetos",
+    "project1": {
+      "desc": "Central CAIXA é um aplicativo que reúne todas as aplicações disponíveis da Caixa Econômica Federal em um só lugar. Clientes podem acessar rapidamente todos os apps da Caixa através da Central CAIXA. Aplicações coloridas indicam que já estão instaladas no dispositivo, enquanto aplicações em cinza sugerem que ainda não foram instaladas. Além disso, a Central CAIXA oferece acesso direto a redes sociais, números de telefone e outros links importantes, simplificando a gestão e uso dos serviços da Caixa para o cliente.",
+      "codeBtn": "Ver Código",
+      "viewBtn": "Ver Projeto"
     },
-    "about": {
-        "title": "Sobre Mim",
-        "text": "Eu sou Elderson Luciano Mezzomo, um desenvolvedor Frontend dedicado e criativo, com paixão por JavaScript, HTML5 e CSS3. Tenho uma combinação única de experiência em liderança de equipes, pensamento analítico e conhecimentos sólidos em desenvolvimento frontend. Com paixão por ciências exatas, adquiri habilidades sólidas em desenvolvimento frontend e agora busco desenvolver ainda mais minhas habilidades técnicas em um ambiente dinâmico e inovador."
+    "project2": {
+      "desc": "Breve descrição do Projeto 2. Este projeto foca em ...",
+      "codeBtn": "Ver Código",
+      "viewBtn": "Ver Projeto"
     },
-    "skills": {
-        "title": "Habilidades",
-        "list": [
-            "Desenvolvimento Frontend: JavaScript, HTML5, CSS3",
-            "Ferramentas de Design: Figma, Canva, Adobe Photoshop, Adobe Illustrator",
-            "Gerenciamento de Projetos e Métodos Ágeis: Scrum (Certified Scrum Master), Kanban",
-            "Solução de Problemas e Habilidades Analíticas",
-            "Software e Ferramentas: Git, VS Code, Google Cloud"
-        ]
-    },
-    "projects": {
-        "title": "Projetos",
-        "project1": {
-            "desc": "O Central CAIXA é um app que reúne todas as aplicações disponíveis da Caixa Econômica Federal em um só lugar. Os clientes podem acessar rapidamente todos os apps da Caixa através do Central CAIXA. Se um app for exibido em cores, ele já está instalado no dispositivo. Apps mostrados em cinza indicam que a aplicação ainda não está instalada. Além disso, o Central CAIXA oferece acesso direto a redes sociais, números de telefone e outros links importantes, facilitando a gestão e o uso dos serviços da Caixa para os clientes."
-        },
-        "project2": {
-            "desc": "Descrição curta do Projeto 2. Este projeto se concentra em ..."
-        },
-        "project3": {
-            "desc": "Descrição curta do Projeto 3. Este projeto se concentra em ..."
-        }
-    },
-    "contact": {
-        "title": "Contato",
-        "text": "Você pode me contatar através dos seguintes canais:"
-    },
-    "downloads": {
-        "title": "Downloads",
-        "text": "Aqui você pode baixar meu currículo e certificados:",
-        "items": {
-            "resume": "- Baixar documentos de inscrição (PDF)",
-            "certificates": "- Baixar Diplomas e Certificados (ZIP)"
-        }
-    },
-    "footer": {
-        "text": "&copy; 2024 Elderson Luciano Mezzomo - Desenvolvedor Frontend apaixonado de Marburg, Alemanha."
+    "project3": {
+      "desc": "Breve descrição do Projeto 3. Este projeto foca em ...",
+      "codeBtn": "Ver Código",
+      "viewBtn": "Ver Projeto"
     }
+  },
+  "contact": {
+    "title": "Contato",
+    "text": "Você pode me contatar através dos seguintes canais:"
+  },
+  "downloads": {
+    "title": "Downloads",
+    "text": "Aqui você pode baixar meu currículo e meus certificados:",
+    "items": {
+      "resume": "Baixar Currículo (PDF)",
+      "certificates": "Baixar Certificados (ZIP)"
+    }
+  },
+  "footer": {
+    "text": "&copy; 2024 Elderson Luciano Mezzomo - Desenvolvedor Frontend apaixonado de Marburg, Alemanha."
+  },
+  "general": {
+    "talkBtn": "Vamos conversar"
+  }
 }

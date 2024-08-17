@@ -1,50 +1,57 @@
 {
-    "nav": {
-        "about": "About Me",
-        "fertigkeiten": "Skills",
-        "projekte": "Projects",
-        "kontakt": "Contact",
-        "downloads": "Downloads"
+  "nav": {
+    "about": "About Me",
+    "fertigkeiten": "Skills",
+    "projekte": "Projects",
+    "kontakt": "Contact",
+    "downloads": "Downloads"
+  },
+  "about": {
+    "title": "About Me",
+    "text": "I am Elderson Luciano Mezzomo, a dedicated and creative Frontend Developer with a passion for JavaScript, HTML5, and CSS3. I possess a unique combination of team leadership experience, analytical thinking, and profound knowledge in frontend development. Passionate about the exact sciences, I have acquired solid skills in frontend development and am now looking to further develop my technical skills in a dynamic and innovative environment."
+  },
+  "skills": {
+    "title": "Skills",
+    "skill1": "Frontend Development: JavaScript, HTML5, CSS3",
+    "skill2": "Design Tools: Figma, Canva, Adobe Photoshop, Adobe Illustrator",
+    "skill3": "Project Management and Agile Methods: Scrum, Kanban",
+    "skill4": "Problem Solving and Analytical Skills",
+    "skill5": "Software and Tools: Git, VS Code, Google Cloud"
+  },
+  "projects": {
+    "title": "Projects",
+    "project1": {
+      "desc": "Central CAIXA is an app that consolidates all available applications of Caixa Econômica Federal in one place. Customers can quickly access all Caixa apps through Central CAIXA. Apps displayed in color are already installed on the device, while grayed-out apps indicate they are not yet installed. Additionally, Central CAIXA provides direct access to social networks, phone numbers, and other important links, simplifying the management and usage of Caixa services for customers.",
+      "codeBtn": "View Code",
+      "viewBtn": "View Project"
     },
-    "about": {
-        "title": "About Me",
-        "text": "I am Elderson Luciano Mezzomo, a dedicated and creative Frontend Developer with a passion for JavaScript, HTML5, and CSS3. I have a unique combination of team leadership experience, analytical thinking, and solid knowledge in frontend development. With a passion for exact sciences, I have acquired strong skills in frontend development and now strive to further develop my technical skills in a dynamic and innovative environment."
+    "project2": {
+      "desc": "Brief description of Project 2. This project focuses on ...",
+      "codeBtn": "View Code",
+      "viewBtn": "View Project"
     },
-    "skills": {
-        "title": "Skills",
-        "list": [
-            "Frontend Development: JavaScript, HTML5, CSS3",
-            "Design Tools: Figma, Canva, Adobe Photoshop, Adobe Illustrator",
-            "Project Management and Agile Methods: Scrum (Certified Scrum Master), Kanban",
-            "Problem-Solving and Analytical Skills",
-            "Software and Tools: Git, VS Code, Google Cloud"
-        ]
-    },
-    "projects": {
-        "title": "Projects",
-        "project1": {
-            "desc": "Central CAIXA is an app that brings together all the available applications from Caixa Econômica Federal in one place. Customers can quickly access all Caixa apps via Central CAIXA. If an app is displayed in color, it is already installed on the device. Apps shown in gray indicate that the application is not yet installed. Additionally, Central CAIXA provides direct access to social networks, phone numbers, and other important links, making it easier for customers to manage and use Caixa services."
-        },
-        "project2": {
-            "desc": "Short description of Project 2. This project focuses on ..."
-        },
-        "project3": {
-            "desc": "Short description of Project 3. This project focuses on ..."
-        }
-    },
-    "contact": {
-        "title": "Contact",
-        "text": "You can reach me through the following channels:"
-    },
-    "downloads": {
-        "title": "Downloads",
-        "text": "Here you can download my resume and certificates:",
-        "items": {
-            "resume": "- Download application documents (PDF)",
-            "certificates": "- Download diplomas and certificates (ZIP)"
-        }
-    },
-    "footer": {
-        "text": "&copy; 2024 Elderson Luciano Mezzomo - Passionate Frontend Developer from Marburg, Germany."
+    "project3": {
+      "desc": "Brief description of Project 3. This project focuses on ...",
+      "codeBtn": "View Code",
+      "viewBtn": "View Project"
     }
+  },
+  "contact": {
+    "title": "Contact",
+    "text": "You can reach me through the following channels:"
+  },
+  "downloads": {
+    "title": "Downloads",
+    "text": "Here you can download my resume and certificates:",
+    "items": {
+      "resume": "Download Resume (PDF)",
+      "certificates": "Download Certificates (ZIP)"
+    }
+  },
+  "footer": {
+    "text": "&copy; 2024 Elderson Luciano Mezzomo - Passionate Frontend Developer from Marburg, Germany."
+  },
+  "general": {
+    "talkBtn": "Let's Talk"
+  }
 }

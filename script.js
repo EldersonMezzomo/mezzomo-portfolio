@@ -37,28 +37,53 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function applyTranslations(translations) {
+        // Navigation Links
         document.getElementById('nav-about').textContent = translations.nav.about;
         document.getElementById('nav-fertigkeiten').textContent = translations.nav.fertigkeiten;
         document.getElementById('nav-projekte').textContent = translations.nav.projekte;
         document.getElementById('nav-kontakt').textContent = translations.nav.kontakt;
         document.getElementById('nav-downloads').textContent = translations.nav.downloads;
+    
+        // About Section
         document.getElementById('about-title').textContent = translations.about.title;
         document.getElementById('about-text').textContent = translations.about.text;
+        document.querySelectorAll('.talk-btn').forEach(btn => {
+            btn.textContent = translations.general.talkBtn;
+        });
+    
+        // Skills Section
         document.getElementById('skills-title').textContent = translations.skills.title;
+        document.getElementById('skill-1').textContent = translations.skills.skill1;
+        document.getElementById('skill-2').textContent = translations.skills.skill2;
+        document.getElementById('skill-3').textContent = translations.skills.skill3;
+        document.getElementById('skill-4').textContent = translations.skills.skill4;
+        document.getElementById('skill-5').textContent = translations.skills.skill5;
+    
+        // Projects Section
         document.getElementById('projects-title').textContent = translations.projects.title;
+        document.getElementById('project-1-desc').textContent = translations.projects.project1.desc;
+        document.getElementById('project-1-code-btn').textContent = translations.projects.project1.codeBtn;
+        document.getElementById('project-1-view-btn').textContent = translations.projects.project1.viewBtn;
+        document.getElementById('project-2-desc').textContent = translations.projects.project2.desc;
+        document.getElementById('project-2-code-btn').textContent = translations.projects.project2.codeBtn;
+        document.getElementById('project-2-view-btn').textContent = translations.projects.project2.viewBtn;
+        document.getElementById('project-3-desc').textContent = translations.projects.project3.desc;
+        document.getElementById('project-3-code-btn').textContent = translations.projects.project3.codeBtn;
+        document.getElementById('project-3-view-btn').textContent = translations.projects.project3.viewBtn;
+    
+        // Contact Section
         document.getElementById('contact-title').textContent = translations.contact.title;
         document.getElementById('contact-text').textContent = translations.contact.text;
+    
+        // Downloads Section
         document.getElementById('downloads-title').textContent = translations.downloads.title;
         document.getElementById('downloads-text').textContent = translations.downloads.text;
+    
+        // Footer
         document.getElementById('footer-text').innerHTML = translations.footer.text;
-        document.getElementById('project-1-desc').textContent = translations.projects.project1.desc;
-        document.getElementById('project-2-desc').textContent = translations.projects.project2.desc;
-        document.getElementById('project-3-desc').textContent = translations.projects.project3.desc;
-
-        // Atualiza o texto dentro dos links de download, mantendo os atributos intactos
-        document.querySelector('#download-resume a').textContent = translations.downloads.items.resume;
-        document.querySelector('#download-certificates a').textContent = translations.downloads.items.certificates;
     }
+    
+
 
 
 
