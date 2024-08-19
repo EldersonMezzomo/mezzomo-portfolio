@@ -43,14 +43,14 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById('nav-projekte').textContent = translations.nav.projekte;
         document.getElementById('nav-kontakt').textContent = translations.nav.kontakt;
         document.getElementById('nav-downloads').textContent = translations.nav.downloads;
-    
+
         // About Section
         document.getElementById('about-title').textContent = translations.about.title;
         document.getElementById('about-text').textContent = translations.about.text;
         document.querySelectorAll('.talk-btn').forEach(btn => {
             btn.textContent = translations.general.talkBtn;
         });
-    
+
         // Skills Section
         document.getElementById('skills-title').textContent = translations.skills.title;
         document.getElementById('skill-1').textContent = translations.skills.skill1;
@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById('skill-3').textContent = translations.skills.skill3;
         document.getElementById('skill-4').textContent = translations.skills.skill4;
         document.getElementById('skill-5').textContent = translations.skills.skill5;
-    
+
         // Projects Section
         document.getElementById('projects-title').textContent = translations.projects.title;
         document.getElementById('project-1-desc').textContent = translations.projects.project1.desc;
@@ -70,38 +70,27 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById('project-3-desc').textContent = translations.projects.project3.desc;
         document.getElementById('project-3-code-btn').textContent = translations.projects.project3.codeBtn;
         document.getElementById('project-3-view-btn').textContent = translations.projects.project3.viewBtn;
-    
+
         // Contact Section
         document.getElementById('contact-title').textContent = translations.contact.title;
         document.getElementById('contact-text').textContent = translations.contact.text;
-    
+
         // Downloads Section
         document.getElementById('downloads-title').textContent = translations.downloads.title;
         document.getElementById('downloads-text').textContent = translations.downloads.text;
-    
+
         // Footer
         document.getElementById('footer-text').innerHTML = translations.footer.text;
     }
-    
-
-
-
-
 
     languageButtons.forEach(button => {
         button.addEventListener('click', () => {
             const lang = button.id;
-            // Atualiza o ícone da bandeira
             const imgSrc = button.querySelector('img').src;
             currentLangButton.querySelector('img').src = imgSrc;
-
-            // Fecha as opções de idioma
             langOptions.style.display = 'none';
-
-            // Atualiza o idioma ativo
             languageButtons.forEach(btn => btn.classList.remove('active'));
             button.classList.add('active');
-
             loadLanguage(lang);
         });
     });
