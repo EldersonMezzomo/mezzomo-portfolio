@@ -8,30 +8,46 @@
   },
   "about": {
     "title": "About Me",
-    "text": "I am Elderson Luciano Mezzomo, a dedicated and creative Frontend Developer with a passion for JavaScript, HTML5, and CSS3. I possess a unique combination of team leadership experience, analytical thinking, and profound knowledge in frontend development. Passionate about the exact sciences, I have acquired solid skills in frontend development and am now looking to further develop my technical skills in a dynamic and innovative environment."
+    "text": "I am Elderson Luciano Mezzomo, a dedicated and creative frontend developer with a passion for JavaScript, HTML5, and CSS3. I have a unique combination of experience in team leadership, analytical thinking, and deep knowledge in frontend development. With a passion for exact sciences, I have acquired solid skills in frontend development and am now eager to further develop my technical skills in a dynamic and innovative environment."
   },
   "skills": {
     "title": "Skills",
     "skill1": "Frontend Development: JavaScript, HTML5, CSS3",
     "skill2": "Design Tools: Figma, Canva, Adobe Photoshop, Adobe Illustrator",
     "skill3": "Project Management and Agile Methods: Scrum, Kanban",
-    "skill4": "Problem Solving and Analytical Skills",
+    "skill4": "Problem-Solving and Analytical Skills",
     "skill5": "Software and Tools: Git, VS Code, Google Cloud"
   },
   "projects": {
     "title": "Projects",
     "project1": {
-      "desc": "Central CAIXA is an app that consolidates all available applications of Caixa Econômica Federal in one place. Customers can quickly access all Caixa apps through Central CAIXA. Apps displayed in color are already installed on the device, while grayed-out apps indicate they are not yet installed. Additionally, Central CAIXA provides direct access to social networks, phone numbers, and other important links, simplifying the management and usage of Caixa services for customers.",
+      "desc": "The website for the \"Nuray Bal\" hair salon in Marburg was developed to showcase the salon's services and ambiance in an attractive and user-friendly manner.",
+      "technologiesTitle": "Technologies:",
+      "html": "HTML: Use of semantic HTML5 for a clear, accessible structure and the implementation of a video embed on the homepage.",
+      "css": "CSS: Flexible techniques with CSS variables for a consistent color and design palette, which adapts responsively to different screen sizes. Transition effects for a smooth user experience.",
+      "js": "JavaScript: Dynamic language switching and customizable header elements that enhance the user experience.",
+      "conclusion": "Conclusion: This project demonstrates my ability to create professional and user-friendly websites using modern web technologies.",
       "codeBtn": "View Code",
       "viewBtn": "View Project"
     },
     "project2": {
-      "desc": "Brief description of Project 2. This project focuses on ...",
+      "desc": "Schlafklang is an interactive web application that helps users create a relaxing sleep environment by allowing them to select a countdown timer, a background video, and music according to their preferences.",
+      "technologiesTitle": "Technologies:",
+      "html": "HTML: Clear structuring of selection options (timer, background, and music) for intuitive operation.",
+      "css": "CSS: Minimalist design with dark colors and subtle animations to support a relaxing atmosphere. Flexibility through CSS variables.",
+      "js": "JavaScript: Volume control and full-screen mode based on the remaining time, providing a seamless user experience.",
+      "conclusion": "Conclusion: Schlafklang showcases my skills in developing interactive and user-centered web applications that are both functional and aesthetically pleasing.",
       "codeBtn": "View Code",
       "viewBtn": "View Project"
     },
     "project3": {
-      "desc": "Brief description of Project 3. This project focuses on ...",
+      "desc": "Central CAIXA brings together all apps, social networks, and support channels of CAIXA ECONÔMICA FEDERAL in one place. The app aims to reduce digital barriers, especially for users with low digital literacy.",
+      "technologiesTitle": "Technologies:",
+      "html": "HTML: Well-structured sections that allow for intuitive navigation between apps, websites, and social networks.",
+      "css": "CSS: Visual differentiation between installed and uninstalled apps to guide users, supported by CSS animations and transitions.",
+      "js": "JavaScript: Detection of installed apps on the user's device and seamless integration with the corresponding app stores for downloads.",
+      "conclusion": "Social Responsibility: This project promotes digital inclusion and facilitates access to important services for all users.",
+      "conclusionFinal": "Conclusion: Central CAIXA demonstrates my ability to develop user-friendly and inclusive applications that provide social value.",
       "codeBtn": "View Code",
       "viewBtn": "View Project"
     }
@@ -45,13 +61,15 @@
     "text": "Here you can download my resume and certificates:",
     "items": {
       "resume": "Download Resume (PDF)",
-      "certificates": "Download Certificates (ZIP)"
+      "certificates": "Download Diplomas and Certificates (ZIP)"
     }
   },
   "footer": {
     "text": "&copy; 2024 Elderson Luciano Mezzomo - Passionate Frontend Developer from Marburg, Germany."
   },
   "general": {
-    "talkBtn": "Let's Talk"
+    "talkBtn": "Let's Talk",
+    "readMoreBtn": "Read more",
+    "readLessBtn": "Read less"
   }
 }

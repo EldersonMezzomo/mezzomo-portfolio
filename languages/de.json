@@ -21,17 +21,33 @@
   "projects": {
     "title": "Projekte",
     "project1": {
-      "desc": "Central CAIXA ist eine App, die alle verfügbaren Anwendungen der Caixa Econômica Federal an einem Ort vereint. Kunden können über die Central CAIXA schnell auf alle Caixa-Apps zugreifen. Wenn eine App farbig angezeigt wird, ist sie bereits auf dem Gerät installiert. Grau hinterlegte Apps deuten darauf hin, dass die Anwendung noch nicht installiert ist. Zusätzlich bietet die Central CAIXA direkten Zugriff auf soziale Netzwerke, Telefonnummern und weitere wichtige Links, wodurch die Verwaltung und Nutzung der Caixa-Dienste für den Kunden vereinfacht wird.",
+      "desc": "Die Webseite für den Friseursalon \"Nuray Bal\" in Marburg wurde entwickelt, um die Dienstleistungen und das Ambiente des Salons ansprechend und benutzerfreundlich darzustellen.",
+      "technologiesTitle": "Technologien:",
+      "html": "HTML: Verwendung von semantischem HTML5 für eine klare, zugängliche Struktur und die Implementierung einer Video-Einbettung auf der Startseite.",
+      "css": "CSS: Flexible Techniken mit CSS-Variablen für eine konsistente Farb- und Designpalette, die sich responsiv an verschiedene Bildschirmgrößen anpasst. Übergangseffekte für eine sanfte Benutzererfahrung.",
+      "js": "JavaScript: Dynamische Sprachwechsel und anpassbare Header-Elemente, die das Benutzererlebnis verbessern.",
+      "conclusion": "Fazit: Dieses Projekt demonstriert meine Fähigkeit, professionelle und benutzerfreundliche Webseiten mit modernen Webtechnologien zu erstellen.",
       "codeBtn": "Code ansehen",
       "viewBtn": "Projekt ansehen"
     },
     "project2": {
-      "desc": "Kurze Beschreibung des Projekts 2. Dieses Projekt konzentriert sich auf ...",
+      "desc": "Schlafklang ist eine interaktive Webanwendung, die den Benutzern hilft, eine beruhigende Schlafumgebung zu schaffen, indem sie einen Countdown-Timer, ein Hintergrundvideo und Musik nach ihren Vorlieben auswählen.",
+      "technologiesTitle": "Technologien:",
+      "html": "HTML: Klare Strukturierung der Auswahlmöglichkeiten (Timer, Hintergrund und Musik) für eine intuitive Bedienung.",
+      "css": "CSS: Minimalistisches Design mit dunklen Farben und subtilen Animationen, um eine entspannende Atmosphäre zu unterstützen. Flexibilität durch CSS-Variablen.",
+      "js": "JavaScript: Steuerung der Lautstärke und des Vollbildmodus basierend auf der verbleibenden Zeit, was eine nahtlose Benutzererfahrung ermöglicht.",
+      "conclusion": "Fazit: Schlafklang zeigt meine Fähigkeiten in der Entwicklung von interaktiven und benutzerzentrierten Webanwendungen, die funktional und ästhetisch ansprechend sind.",
       "codeBtn": "Code ansehen",
       "viewBtn": "Projekt ansehen"
     },
     "project3": {
-      "desc": "Kurze Beschreibung des Projekts 3. Dieses Projekt konzentriert sich auf ...",
+      "desc": "Central CAIXA vereint alle Apps, sozialen Netzwerke und Supportkanäle der CAIXA ECONÔMICA FEDERAL an einem Ort. Die App zielt darauf ab, digitale Barrieren zu senken, insbesondere für Nutzer mit geringer digitaler Kompetenz.",
+      "technologiesTitle": "Technologien:",
+      "html": "HTML: Gut strukturierte Abschnitte, die eine intuitive Navigation zwischen Apps, Webseiten und sozialen Netzwerken ermöglichen.",
+      "css": "CSS: Farbliche Unterscheidung zwischen installierten und nicht installierten Apps zur visuellen Führung der Nutzer, unterstützt durch CSS-Animationen und Übergänge.",
+      "js": "JavaScript: Erkennung installierter Apps auf dem Gerät des Nutzers und nahtlose Integration in die entsprechenden App-Stores für Downloads.",
+      "conclusion": "Soziale Verantwortung: Dieses Projekt fördert die digitale Inklusion und erleichtert den Zugang zu wichtigen Diensten für alle Nutzer.",
+      "conclusionFinal": "Fazit: Central CAIXA zeigt meine Fähigkeit, benutzerfreundliche und inklusive Anwendungen zu entwickeln, die einen sozialen Mehrwert bieten.",
       "codeBtn": "Code ansehen",
       "viewBtn": "Projekt ansehen"
     }
@@ -52,6 +68,8 @@
     "text": "&copy; 2024 Elderson Luciano Mezzomo - Leidenschaftlicher Frontend-Entwickler aus Marburg, Deutschland."
   },
   "general": {
-    "talkBtn": "Lass uns sprechen"
+    "talkBtn": "Lass uns sprechen",
+    "readMoreBtn": "Mehr anzeigen",
+    "readLessBtn": "Weniger anzeigen"
   }
 }

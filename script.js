@@ -1,4 +1,4 @@
-// Script para botão "Ver mais"
+// Script para botão "Ver mais" e "Ver menos"
 document.querySelectorAll('.read-more-btn').forEach(button => {
     button.addEventListener('click', () => {
         const projectDescription = button.previousElementSibling;
@@ -6,9 +6,9 @@ document.querySelectorAll('.read-more-btn').forEach(button => {
         projectDescription.classList.toggle('expanded');
 
         if (projectDescription.classList.contains('expanded')) {
-            button.textContent = 'Weniger anzeigen'; // Mostrar "Ver menos" em alemão
+            button.textContent = translations.general.readLessBtn; // Mostrar "Ver menos" conforme a tradução
         } else {
-            button.textContent = 'Ver mais';
+            button.textContent = translations.general.readMoreBtn; // Mostrar "Ver mais" conforme a tradução
         }
     });
 });
@@ -62,12 +62,30 @@ document.addEventListener("DOMContentLoaded", function () {
         // Projects Section
         document.getElementById('projects-title').textContent = translations.projects.title;
         document.getElementById('project-1-desc').textContent = translations.projects.project1.desc;
+        document.getElementById('project-1-technologies-title').textContent = translations.projects.project1.technologiesTitle;
+        document.getElementById('project-1-html').textContent = translations.projects.project1.html;
+        document.getElementById('project-1-css').textContent = translations.projects.project1.css;
+        document.getElementById('project-1-js').textContent = translations.projects.project1.js;
+        document.getElementById('project-1-conclusion').textContent = translations.projects.project1.conclusion;
         document.getElementById('project-1-code-btn').textContent = translations.projects.project1.codeBtn;
         document.getElementById('project-1-view-btn').textContent = translations.projects.project1.viewBtn;
+
         document.getElementById('project-2-desc').textContent = translations.projects.project2.desc;
+        document.getElementById('project-2-technologies-title').textContent = translations.projects.project2.technologiesTitle;
+        document.getElementById('project-2-html').textContent = translations.projects.project2.html;
+        document.getElementById('project-2-css').textContent = translations.projects.project2.css;
+        document.getElementById('project-2-js').textContent = translations.projects.project2.js;
+        document.getElementById('project-2-conclusion').textContent = translations.projects.project2.conclusion;
         document.getElementById('project-2-code-btn').textContent = translations.projects.project2.codeBtn;
         document.getElementById('project-2-view-btn').textContent = translations.projects.project2.viewBtn;
+
         document.getElementById('project-3-desc').textContent = translations.projects.project3.desc;
+        document.getElementById('project-3-technologies-title').textContent = translations.projects.project3.technologiesTitle;
+        document.getElementById('project-3-html').textContent = translations.projects.project3.html;
+        document.getElementById('project-3-css').textContent = translations.projects.project3.css;
+        document.getElementById('project-3-js').textContent = translations.projects.project3.js;
+        document.getElementById('project-3-conclusion').textContent = translations.projects.project3.conclusion;
+        document.getElementById('project-3-conclusion-final').textContent = translations.projects.project3.conclusionFinal;
         document.getElementById('project-3-code-btn').textContent = translations.projects.project3.codeBtn;
         document.getElementById('project-3-view-btn').textContent = translations.projects.project3.viewBtn;
 
@@ -81,6 +99,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Footer
         document.getElementById('footer-text').innerHTML = translations.footer.text;
+
+        // Atualiza os botões de "Ver mais" e "Ver menos" conforme a linguagem
+        document.querySelectorAll('.read-more-btn').forEach(button => {
+            if (button.parentElement.querySelector('.project-description').classList.contains('expanded')) {
+                button.textContent = translations.general.readLessBtn;
+            } else {
+                button.textContent = translations.general.readMoreBtn;
+            }
+        });
     }
 
     languageButtons.forEach(button => {
