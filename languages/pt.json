@@ -8,57 +8,57 @@
   },
   "about": {
     "title": "Sobre mim",
-    "text": "Sou Elderson Luciano Mezzomo, um desenvolvedor frontend dedicado e criativo, com paixão por JavaScript, HTML5 e CSS3. Tenho uma combinação única de experiência em liderança de equipes, pensamento analítico e profundo conhecimento em desenvolvimento frontend. Com paixão por ciências exatas, adquiri habilidades sólidas no desenvolvimento frontend e agora busco aprimorar minhas habilidades técnicas em um ambiente dinâmico e inovador."
+    "text": "Sou Elderson Luciano Mezzomo, um desenvolvedor Frontend dedicado e criativo, com paixão por JavaScript, HTML5 e CSS3. Tenho uma combinação única de experiência em liderança de equipes, pensamento analítico e conhecimentos sólidos em desenvolvimento Frontend. Com paixão pelas ciências exatas, adquiri habilidades aprofundadas em desenvolvimento Frontend e agora busco aprimorar minhas habilidades técnicas em um ambiente dinâmico e inovador."
   },
   "skills": {
     "title": "Habilidades",
     "skill1": "Desenvolvimento Frontend: JavaScript, HTML5, CSS3",
     "skill2": "Ferramentas de Design: Figma, Canva, Adobe Photoshop, Adobe Illustrator",
-    "skill3": "Gerenciamento de Projetos e Metodologias Ágeis: Scrum, Kanban",
+    "skill3": "Gerenciamento de Projetos e Métodos Ágeis: Scrum, Kanban",
     "skill4": "Resolução de Problemas e Habilidades Analíticas",
     "skill5": "Software e Ferramentas: Git, VS Code, Google Cloud"
   },
   "projects": {
     "title": "Projetos",
     "project1": {
-      "desc": "O site para o salão de beleza 'Nuray Bal' em Marburg foi desenvolvido para apresentar os serviços e a atmosfera do salão de forma atraente e fácil de usar.",
+      "desc": "O site para o salão de beleza 'Nuray Bal' em Marburg foi desenvolvido para apresentar os serviços e o ambiente do salão de forma atraente e amigável.",
       "technologiesTitle": "Tecnologias:",
-      "html": "HTML: Uso de HTML5 semântico para uma estrutura clara e acessível, com implementação de um vídeo em segundo plano na página inicial.",
-      "css": "CSS: Técnicas flexíveis com variáveis CSS para uma paleta de cores e design consistente, adaptável a diferentes tamanhos de tela. Transições suaves para uma experiência de usuário agradável.",
-      "js": "JavaScript: Troca dinâmica de idiomas e elementos de cabeçalho personalizáveis para melhorar a experiência do usuário.",
-      "conclusion": "Conclusão: Este projeto demonstra minha capacidade de criar sites profissionais e fáceis de usar com tecnologias web modernas.",
+      "html": "HTML: Uso de HTML5 semântico para uma estrutura clara e acessível e a implementação de um vídeo de fundo na página inicial.",
+      "css": "CSS: Técnicas flexíveis com variáveis CSS para uma paleta de cores e design consistente, que se adapta de forma responsiva a diferentes tamanhos de tela. Efeitos de transição para uma experiência de usuário suave.",
+      "js": "JavaScript: Alternância dinâmica de idiomas e elementos de cabeçalho personalizáveis que melhoram a experiência do usuário.",
+      "conclusion": "Conclusão: Este projeto demonstra minha capacidade de criar sites profissionais e amigáveis com tecnologias web modernas.",
       "codeBtn": "Ver Código",
       "viewBtn": "Ver Projeto"
     },
     "project2": {
-      "desc": "Schlafklang é uma aplicação web interativa que ajuda os usuários a criar um ambiente relaxante para dormir, permitindo selecionar um cronômetro, um vídeo de fundo e uma música de sua escolha.",
+      "desc": "Schlafklang é uma aplicação web interativa que ajuda os usuários a criar um ambiente de sono relaxante, permitindo que selecionem um temporizador, um vídeo de fundo e uma música de sua preferência.",
       "technologiesTitle": "Tecnologias:",
-      "html": "HTML: Estrutura clara para opções de seleção (cronômetro, fundo e música) para uma operação intuitiva.",
-      "css": "CSS: Design minimalista com cores escuras e animações sutis para apoiar uma atmosfera relaxante. Flexibilidade através de variáveis CSS.",
-      "js": "JavaScript: Controle de volume e modo de tela cheia com base no tempo restante, proporcionando uma experiência de usuário suave.",
-      "conclusion": "Conclusão: Schlafklang mostra minhas habilidades no desenvolvimento de aplicações web interativas e centradas no usuário, que são funcionais e visualmente atraentes.",
+      "html": "HTML: Estrutura clara das opções de seleção (temporizador, fundo e música) para uma operação intuitiva.",
+      "css": "CSS: Design minimalista com cores escuras e animações sutis para apoiar a atmosfera relaxante. Flexibilidade através de variáveis CSS.",
+      "js": "JavaScript: Controle do volume e do modo de tela cheia com base no tempo restante, proporcionando uma experiência de usuário perfeita.",
+      "conclusion": "Conclusão: Schlafklang mostra minhas habilidades no desenvolvimento de aplicações web interativas e centradas no usuário, que são funcionais e esteticamente agradáveis.",
       "codeBtn": "Ver Código",
       "viewBtn": "Ver Projeto"
     },
     "project3": {
-      "desc": "Central CAIXA reúne todos os aplicativos, redes sociais e canais de suporte da CAIXA ECONÔMICA FEDERAL em um só lugar. O objetivo é reduzir barreiras digitais, especialmente para usuários com pouca competência digital.",
+      "desc": "Central CAIXA reúne todos os aplicativos, redes sociais e canais de suporte da CAIXA ECONÔMICA FEDERAL em um só lugar. O objetivo do aplicativo é reduzir barreiras digitais, especialmente para usuários com baixa competência digital.",
       "technologiesTitle": "Tecnologias:",
-      "html": "HTML: Seções bem estruturadas que permitem navegação intuitiva entre aplicativos, sites e redes sociais.",
-      "css": "CSS: Diferenciação visual entre aplicativos instalados e não instalados para guiar os usuários, suportado por animações e transições CSS.",
+      "html": "HTML: Seções bem estruturadas que permitem uma navegação intuitiva entre aplicativos, sites e redes sociais.",
+      "css": "CSS: Diferenciação de cores entre aplicativos instalados e não instalados para orientar visualmente os usuários, apoiado por animações CSS e transições.",
       "js": "JavaScript: Detecção de aplicativos instalados no dispositivo do usuário e integração perfeita com as lojas de aplicativos correspondentes para downloads.",
       "conclusion": "Responsabilidade Social: Este projeto promove a inclusão digital e facilita o acesso a serviços essenciais para todos os usuários.",
-      "conclusionFinal": "Conclusão: Central CAIXA demonstra minha capacidade de desenvolver aplicações inclusivas e fáceis de usar, que oferecem um valor social significativo.",
+      "conclusionFinal": "Conclusão: Central CAIXA demonstra minha capacidade de desenvolver aplicações amigáveis e inclusivas que oferecem um valor social.",
       "codeBtn": "Ver Código",
       "viewBtn": "Ver Projeto"
     }
   },
   "contact": {
     "title": "Contato",
-    "text": "Você pode me encontrar através dos seguintes canais:"
+    "text": "Você pode me contactar através dos seguintes canais:"
   },
   "downloads": {
     "title": "Downloads",
-    "text": "Aqui você pode baixar meu currículo e meus certificados:",
+    "text": "Aqui você pode baixar meu currículo e certificados:",
     "items": {
       "resume": "Baixar Currículo (PDF)",
       "certificates": "Baixar Diplomas e Certificados (ZIP)"
