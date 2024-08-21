@@ -384,6 +384,31 @@ ul.custom-bullets li::before {
     background-color: var(--secondary-color);
 }
 
+/* "Weitere Projekte" Button Styles */
+.weitere-projekte-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.weitere-projekte-btn {
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+    padding: 0.625rem 0.9375rem;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 0.3125rem;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.weitere-projekte-btn:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-3px);
+}
+
+
 /* "Contact" Section Styles */
 .contact-icons {
     display: flex;
@@ -451,17 +476,53 @@ ul.download-list li {
 footer {
     background-color: var(--primary-color);
     color: var(--background-color);
-    padding: 1.25rem 0;
+    padding: 1.5rem 0;
     text-align: center;
     width: 100%;
     position: relative;
     margin: 0;
-    margin-top: 21.875rem;
+    margin-top: 8rem;
+}
+
+#footer-nav {
+    margin-bottom: 1rem;
+}
+
+.footer-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.footer-menu li {
+    display: inline;
+}
+
+.footer-menu li:not(:last-child)::after {
+    content: "|";
+    margin-left: 1rem;
+    color: var(--background-color);
+}
+
+.footer-menu a {
+    color: var(--background-color);
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.footer-menu a:hover {
+    color: var(--secondary-color);
 }
 
 footer p {
     margin: 0;
     font-size: 0.9rem;
+    color: var(--background-color);
+    margin-top: 1rem;
 }
 
 /* Hamburger Menu Button Styles */
