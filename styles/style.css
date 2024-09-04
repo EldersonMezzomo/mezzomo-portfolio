@@ -7,17 +7,21 @@
 
 /* Color and Size Variables */
 :root {
-    --primary-color: #0095ac;
-    --secondary-color: #90a4ae;
-    --background-color: #f5f5f5;
-    --text-color: #666;
+    --primary-color: #2a9d8f;
+    --secondary-color: #264653;
+    --background-color: #f4f1de;
+    --text-color: #1d3557;
+    --accent-color: #e76f51;
+    --neutral-color: #e9c46a;
+    --highlight-color: #fca311;
+
     --font-family: "KorbRegular", "Source Sans Pro", Helvetica, sans-serif;
     --font-size-base: 1.2rem;
     --font-size-lg: 2.5rem;
     --container-padding: 2%;
     --container-max-width: 60rem;
     --header-padding: 0.5rem 0;
-    --section-margin: 2.5rem 0;
+    --section-margin: 2.5rem 0;   
 }
 
 /* General Settings */
@@ -233,7 +237,7 @@ h2::after {
 }
 
 .profile-photo img {
-    max-width: 9.375rem;
+    max-width: 10rem;
     border-radius: 50%;
     margin-right: 1.25rem;
     box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
@@ -460,7 +464,7 @@ ul.custom-bullets li::before {
 }
 
 #downloads a:hover {
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 ul.download-list {
