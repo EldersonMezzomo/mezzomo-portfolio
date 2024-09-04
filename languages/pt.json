@@ -70,6 +70,7 @@
   "general": {
     "talkBtn": "Vamos conversar",
     "readMoreBtn": "Ver mais",
-    "readLessBtn": "Ver menos"
+    "readLessBtn": "Ver menos",
+    "languageTooltip": "Idioma"
   }
 }

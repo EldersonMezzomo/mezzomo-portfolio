@@ -7,21 +7,18 @@
 
 /* Color and Size Variables */
 :root {
-    --primary-color: #2a9d8f;
-    --secondary-color: #264653;
-    --background-color: #f4f1de;
-    --text-color: #1d3557;
-    --accent-color: #e76f51;
-    --neutral-color: #e9c46a;
-    --highlight-color: #fca311;
-
+    --color-main: #2a9d8f;
+    --color-basic: #f4f1de;
+    --color-text: #1d3557;
+    --color-acent: #e76f51;
+    
     --font-family: "KorbRegular", "Source Sans Pro", Helvetica, sans-serif;
     --font-size-base: 1.2rem;
     --font-size-lg: 2.5rem;
     --container-padding: 2%;
     --container-max-width: 60rem;
     --header-padding: 0.5rem 0;
-    --section-margin: 2.5rem 0;   
+    --section-margin: 2.5rem 0;
 }
 
 /* General Settings */
@@ -31,8 +28,8 @@ html {
 
 body {
     font-family: var(--font-family);
-    background-color: var(--background-color);
-    color: var(--text-color);
+    background-color: var(--color-basic);
+    color: var(--color-text);
     line-height: 1.6;
     font-size: var(--font-size-base);
     padding: 0;
@@ -42,7 +39,7 @@ body {
 
 /* Highlight Class */
 .highlight {
-    color: var(--primary-color);
+    color: var(--color-main);
     font-weight: bold;
 }
 
@@ -56,7 +53,7 @@ body {
 
 /* Fixed Header */
 header {
-    background-color: var(--primary-color);
+    background-color: var(--color-main);
     padding: var(--header-padding);
     position: fixed;
     width: 100%;
@@ -81,7 +78,7 @@ header .logo {
 
 header .logo h1 {
     font-size: 2.2rem;
-    color: var(--background-color);
+    color: var(--color-basic);
     margin: 0;
 }
 
@@ -89,18 +86,18 @@ header .logo h1 {
     font-family: 'Audiowide', 'Arial', sans-serif;
     font-size: 2rem;
     font-weight: bold;
-    color: var(--background-color);
+    color: var(--color-basic);
     transition: color 0.3s ease;
 }
 
 .logo a {
     text-decoration: none;
-    color: var(--primary-color);
+    color: var(--color-main);
     transition: color 0.3s ease;
 }
 
 .logo a:hover h1 {
-    color: var(--secondary-color);
+    color: var(--color-acent);
 }
 
 header nav ul {
@@ -117,14 +114,42 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: var(--background-color);
+    color: var(--color-basic);
     text-decoration: none;
     font-size: 1rem;
 }
 
 header nav ul li a:hover {
-    color: var(--secondary-color);
+    color: var(--color-acent);
 }
+
+
+/* Contêiner para os botões de ação (paleta e idioma) */
+.menu-actions {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-left: auto;
+}
+
+/* Estilo básico do botão de paleta */
+.palette-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--color-basic);
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+.palette-btn:hover {
+    color: var(--color-acent);
+}
+
+/* revisar menu de idioma */
+
 
 .language-selector {
     display: flex;
@@ -134,23 +159,14 @@ header nav ul li a:hover {
 }
 
 .lang-btn {
-    background-color: var(--primary-color);
-    color: var(--background-color);
+    background: none;
     border: none;
-    padding: 5px 10px;
     cursor: pointer;
-    border-radius: 5px;
-    font-size: 0.9em;
-    transition: background-color 0.3s ease;
-}
-
-.lang-btn:hover {
-    background-color: var(--secondary-color);
-}
-
-.lang-btn.active {
-    background-color: var(--secondary-color);
-    font-weight: bold;
+    color: var(--color-basic);
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+    margin-left: 12px;
 }
 
 /* Language Selector Styles */
@@ -163,19 +179,34 @@ header nav ul li a:hover {
     background: none;
     border: none;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: color 0.3s ease;
 }
 
-#current-lang img {
-    width: 24px;
-    height: 24px;
+#current-lang:hover {
+    color: var(--color-acent);
+}
+
+#current-lang i,
+#current-lang span {
+    transition: color 0.3s ease;
+}
+
+#current-lang i {
+    font-size: 1.2rem;
+}
+
+#current-lang span {
+    font-size: 1rem;
 }
 
 .lang-options {
-    display: none;
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: var(--background-color);
+    background-color: var(--color-basic);
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     padding: 10px 0;
@@ -187,20 +218,10 @@ header nav ul li a:hover {
     border: none;
     cursor: pointer;
     padding: 5px 10px;
-}
-
-.lang-options .lang-btn img {
-    width: 24px;
-    height: 24px;
-}
-
-.lang-options .lang-btn:hover {
-    background-color: var(--background-color);
-}
-
-.language-selector:hover .lang-options {
     display: block;
+    font-size: 1rem;
 }
+
 
 /* Section Styles */
 section {
@@ -211,7 +232,7 @@ section {
 h2 {
     font-size: var(--font-size-lg);
     font-weight: 400;
-    color: var(--primary-color);
+    color: var(--color-main);
     margin-top: 9rem;
     margin-bottom: 3rem;
     position: relative;
@@ -225,7 +246,7 @@ h2::after {
     flex-grow: 1;
     margin-left: 1.25rem;
     height: 0.0625rem;
-    background-color: var(--primary-color);
+    background-color: var(--color-main);
 }
 
 /* "About Me" Section Styles */
@@ -253,8 +274,8 @@ h2::after {
     width: 40%;
     display: block;
     margin-top: 1rem;
-    background-color: var(--primary-color);
-    color: var(--background-color);
+    background-color: var(--color-main);
+    color: var(--color-basic);
     padding: 10px 20px;
     text-decoration: none;
     text-align: center;
@@ -263,19 +284,15 @@ h2::after {
 }
 
 .talk-btn:hover {
-    background-color: var(--secondary-color);
+    background-color: var(--color-acent);
 }
 
 /* General Link Styling */
 ul li a {
-    color: var(--primary-color);
+    color: var(--color-main);
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
-}
-
-ul li a:hover {
-    color: var(--secondary-color);
 }
 
 /* Bullet Customization */
@@ -292,7 +309,7 @@ ul.custom-bullets li::before {
     content: "•";
     position: absolute;
     left: -1.25rem;
-    color: var(--primary-color);
+    color: var(--color-main);
     font-size: 1.2rem;
 }
 
@@ -326,16 +343,16 @@ ul.custom-bullets li::before {
 .project-details h3 {
     font-size: 1.5rem;
     margin-bottom: 0.625rem;
-    color: var(--primary-color);
+    color: var(--color-acent);
 }
 
 .project-details h3 a {
-    color: var(--primary-color);
+    color: var(--color-main);
     text-decoration: none;
 }
 
 .project-details h3 a:hover {
-    color: var(--secondary-color);
+    color: var(--color-hover);
 }
 
 .project-details p {
@@ -358,14 +375,14 @@ ul.custom-bullets li::before {
 .read-more-btn {
     background-color: transparent;
     border: none;
-    color: var(--primary-color);
+    color: var(--color-text);
     cursor: pointer;
     font-weight: bold;
     margin-top: 0.625rem;
 }
 
 .read-more-btn:hover {
-    color: var(--secondary-color);
+    color: var(--color-acent);
 }
 
 .project-buttons {
@@ -375,8 +392,8 @@ ul.custom-bullets li::before {
 
 .project-buttons .btn {
     flex: 1;
-    background-color: var(--primary-color);
-    color: var(--background-color);
+    background-color: var(--color-main);
+    color: var(--color-basic);
     padding: 0.625rem 0.9375rem;
     text-decoration: none;
     border-radius: 0.3125rem;
@@ -385,20 +402,20 @@ ul.custom-bullets li::before {
 }
 
 .project-buttons .btn:hover {
-    background-color: var(--secondary-color);
+    background-color: var(--color-acent);
 }
 
 /* "Weitere Projekte" Button Styles */
 .weitere-projekte-container {
     display: flex;
     justify-content: center;
-    margin-top: 2rem;
+    margin-top: 3rem;
 }
 
 .weitere-projekte-btn {
-    background-color: var(--secondary-color);
-    color: var(--background-color);
-    padding: 0.625rem 0.9375rem;
+    background-color: var(--color-main);
+    color: var(--color-basic);
+    padding: 1rem 2rem;
     text-decoration: none;
     text-align: center;
     border-radius: 0.3125rem;
@@ -408,10 +425,9 @@ ul.custom-bullets li::before {
 }
 
 .weitere-projekte-btn:hover {
-    background-color: var(--primary-color);
+    background-color: var(--color-acent);
     transform: translateY(-3px);
 }
-
 
 /* "Contact" Section Styles */
 .contact-icons {
@@ -426,13 +442,13 @@ ul.custom-bullets li::before {
 
 .contact-icons li a {
     text-decoration: none;
-    color: var(--primary-color);
+    color: var(--color-main);
     font-size: 2.5rem;
     position: relative;
 }
 
 .contact-icons li a:hover {
-    color: var(--secondary-color);
+    color: var(--color-acent);
 }
 
 .contact-icons li a[title]:hover::after {
@@ -442,7 +458,7 @@ ul.custom-bullets li::before {
     left: 50%;
     transform: translateX(-50%);
     background: rgba(0, 0, 0, 0.7);
-    color: var(--background-color);
+    color: var(--color-basic);
     padding: 0.3125rem 0.625rem;
     border-radius: 0.3125rem;
     font-size: 0.9rem;
@@ -459,12 +475,12 @@ ul.custom-bullets li::before {
 
 #downloads a {
     text-decoration: none;
-    color: var(--primary-color);
+    color: var(--color-main);
     font-weight: bold;
 }
 
 #downloads a:hover {
-    color: var(--secondary-color);
+    color: var(--color-acent);
 }
 
 ul.download-list {
@@ -478,8 +494,8 @@ ul.download-list li {
 
 /* Minimalist Footer Styles */
 footer {
-    background-color: var(--primary-color);
-    color: var(--background-color);
+    background-color: var(--color-main);
+    color: var(--color-basic);
     padding: 1.5rem 0;
     text-align: center;
     width: 100%;
@@ -508,24 +524,24 @@ footer {
 .footer-menu li:not(:last-child)::after {
     content: "|";
     margin-left: 1rem;
-    color: var(--background-color);
+    color: var(--color-basic);
 }
 
 .footer-menu a {
-    color: var(--background-color);
+    color: var(--color-basic);
     text-decoration: none;
     font-size: 1rem;
     transition: color 0.3s ease;
 }
 
 .footer-menu a:hover {
-    color: var(--secondary-color);
+    color: var(--color-acent);
 }
 
 footer p {
     margin: 0;
     font-size: 0.9rem;
-    color: var(--background-color);
+    color: var(--color-basic);
     margin-top: 1rem;
 }
 
@@ -540,12 +556,13 @@ footer p {
     border: none;
     cursor: pointer;
     z-index: 1001;
+    margin-left: 12px;
 }
 
 .hamburger span {
     width: 100%;
     height: 3px;
-    background-color: var(--background-color);
+    background-color: var(--color-basic);
     border-radius: 5px;
     transition: all 0.3s;
 }
@@ -572,7 +589,7 @@ footer p {
         position: absolute;
         top: 60px;
         right: 20px;
-        background-color: var(--primary-color);
+        background-color: var(--color-main);
         width: 200px;
         border-radius: 5px;
         padding: 10px;

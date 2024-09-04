@@ -17,18 +17,44 @@ document.querySelectorAll('.read-more-btn').forEach(button => {
 document.addEventListener('DOMContentLoaded', function () {
     const hamburgerBtn = document.getElementById('hamburger-btn');
     const navMenu = document.querySelector('header nav ul');
+    const menuItems = navMenu.querySelectorAll('li a'); // Seleciona todos os links do menu
 
-    hamburgerBtn.addEventListener('click', function () {
+    // Função para abrir/fechar o menu
+    hamburgerBtn.addEventListener('click', function (event) {
+        event.stopPropagation(); // Impede que o clique feche imediatamente o menu
         navMenu.classList.toggle('active');
     });
+
+    // Fecha o menu ao clicar em qualquer área fora dele
+    document.addEventListener('click', function (event) {
+        if (!navMenu.contains(event.target) && !hamburgerBtn.contains(event.target)) {
+            if (navMenu.classList.contains('active')) {
+                navMenu.classList.remove('active'); // Fecha o menu se estiver aberto
+            }
+        }
+    });
+
+    // Fecha o menu ao clicar em um item de navegação
+    menuItems.forEach(function (menuItem) {
+        menuItem.addEventListener('click', function () {
+            if (navMenu.classList.contains('active')) {
+                navMenu.classList.remove('active'); // Fecha o menu ao clicar em um link
+            }
+        });
+    });
 });
+
+
+
 
 // Script para carregar idiomas
 document.addEventListener("DOMContentLoaded", function () {
     const currentLangButton = document.getElementById('current-lang');
-    const langOptions = document.getElementById('lang-options');
-    const languageButtons = document.querySelectorAll('.lang-btn');
+    const currentLangText = document.getElementById('current-lang-text'); // Span que mostra o código do idioma
+    const langOptions = ['de', 'en', 'pt']; // Ciclo de idiomas
+    let currentLangIndex = 0;
 
+    // Função para carregar o idioma selecionado
     function loadLanguage(lang) {
         fetch(`/languages/${lang}.json`)
             .then(response => response.json())
@@ -36,6 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
             .catch(error => console.error('Erro ao carregar o arquivo de idioma:', error));
     }
 
+    // Função para aplicar as traduções no site
     function applyTranslations(translations) {
         // Navigation Links
         document.getElementById('nav-about').textContent = translations.nav.about;
@@ -43,6 +70,8 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById('nav-projekte').textContent = translations.nav.projekte;
         document.getElementById('nav-kontakt').textContent = translations.nav.kontakt;
         document.getElementById('nav-downloads').textContent = translations.nav.downloads;
+
+        currentLangButton.setAttribute('title', translations.general.languageTooltip);
 
         // About Section
         document.getElementById('about-title').textContent = translations.about.title;
@@ -110,24 +139,64 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    languageButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            const lang = button.id;
-            const imgSrc = button.querySelector('img').src;
-            currentLangButton.querySelector('img').src = imgSrc;
-            langOptions.style.display = 'none';
-            languageButtons.forEach(btn => btn.classList.remove('active'));
-            button.classList.add('active');
-            loadLanguage(lang);
-        });
-    });
+   // Função para alternar para o próximo idioma no ciclo (DE -> EN -> PT)
+   function switchLanguage() {
+    currentLangIndex = (currentLangIndex + 1) % langOptions.length; // Cicla entre 0, 1, 2
+    const newLang = langOptions[currentLangIndex];
+    
+    // Atualiza o texto do botão com o novo idioma
+    currentLangText.textContent = newLang.toUpperCase(); // Atualiza para "DE", "EN" ou "PT"
+    
+    // Carrega o novo idioma
+    loadLanguage(newLang);
 
-    // Exibe ou oculta as opções de idioma ao clicar na bandeira
-    currentLangButton.addEventListener('click', () => {
-        langOptions.style.display = langOptions.style.display === 'block' ? 'none' : 'block';
-    });
+    // Salva o idioma escolhido no localStorage
+    localStorage.setItem('selectedLanguage', newLang);
+}
 
-    // Carrega o idioma padrão (alemão)
-    loadLanguage('de');
-    document.getElementById('de').classList.add('active');
+// Carregar o idioma salvo no localStorage (se houver) ou usar 'de' como padrão
+const savedLang = localStorage.getItem('selectedLanguage');
+if (savedLang && langOptions.includes(savedLang)) {
+    currentLangIndex = langOptions.indexOf(savedLang);
+    currentLangText.textContent = savedLang.toUpperCase(); // Define o texto correto no botão
+    loadLanguage(savedLang); // Carrega o idioma salvo
+} else {
+    loadLanguage('de'); // Carrega o idioma alemão por padrão
+    currentLangText.textContent = 'DE'; // Define "DE" como o texto padrão
+}
+
+// Adiciona o evento de clique no botão de idioma para alternar o idioma
+currentLangButton.addEventListener('click', switchLanguage);
 });
+
+
+//alternância de temas:
+document.addEventListener('DOMContentLoaded', function () {
+    const paletteBtn = document.getElementById('palette-btn'); // Botão de paleta de cores
+    const themeStylesheet = document.getElementById('theme-stylesheet'); // Link que carrega o tema
+    const themes = ['thema-default.css', 'thema-dark.css', 'thema-light.css', 'thema-retro.css', 'thema-futuristic.css']; // Lista de temas
+    let currentThemeIndex = 0; // Índice do tema atual
+
+    // Função para alternar entre os temas
+    function switchTheme() {
+        currentThemeIndex = (currentThemeIndex + 1) % themes.length; // Cicla entre os temas
+        const newTheme = themes[currentThemeIndex]; // Seleciona o próximo tema
+        
+        // Atualiza o href do link para carregar o novo tema a partir da pasta "styles"
+        themeStylesheet.href = `styles/${newTheme}`;
+
+        // Salva o tema selecionado no localStorage para lembrar na próxima visita
+        localStorage.setItem('selectedTheme', newTheme);
+    }
+
+    // Carregar o tema salvo no localStorage, se houver
+    const savedTheme = localStorage.getItem('selectedTheme');
+    if (savedTheme) {
+        themeStylesheet.href = `styles/${savedTheme}`; // Aplica o tema salvo
+        currentThemeIndex = themes.indexOf(savedTheme); // Define o índice do tema salvo
+    }
+
+    // Adicionar evento de clique ao botão de paleta para alternar entre os temas
+    paletteBtn.addEventListener('click', switchTheme);
+});
+
