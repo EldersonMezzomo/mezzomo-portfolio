@@ -11,7 +11,7 @@
     --color-basic: #f4f1de;
     --color-text: #1d3557;
     --color-acent: #e76f51;
-    
+
     --font-family: "KorbRegular", "Source Sans Pro", Helvetica, sans-serif;
     --font-size-base: 1.2rem;
     --font-size-lg: 2.5rem;
@@ -262,6 +262,13 @@ h2::after {
     border-radius: 50%;
     margin-right: 1.25rem;
     box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    /* Adiciona transição suave */
+}
+
+.profile-photo img:hover {
+    transform: scale(1.05);
+    /* Aumenta 5% ao passar o mouse */
 }
 
 .about-text {
@@ -327,7 +334,7 @@ ul.custom-bullets li::before {
 .project-image img {
     max-width: 100%;
     border-radius: 0.5rem;
-    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+
     transition: transform 0.3s ease;
 }
 
@@ -372,6 +379,11 @@ ul.custom-bullets li::before {
     max-height: none;
 }
 
+.weitere-projekte-description {
+    max-height: none;
+    overflow: visible;
+}
+
 .read-more-btn {
     background-color: transparent;
     border: none;
@@ -405,29 +417,61 @@ ul.custom-bullets li::before {
     background-color: var(--color-acent);
 }
 
-/* "Weitere Projekte" Button Styles */
-.weitere-projekte-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 3rem;
-}
-
-.weitere-projekte-btn {
-    background-color: var(--color-main);
+/* Weitere Projekte" */
+.project-code-animation {
+    background-color: var(--color-text);
+    padding: 1rem;
+    border-radius: 8px;
+    max-width: 300px;
+    margin-right: 2rem;
     color: var(--color-basic);
-    padding: 1rem 2rem;
-    text-decoration: none;
-    text-align: center;
-    border-radius: 0.3125rem;
-    font-size: 1rem;
-    font-weight: bold;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.8rem;
 }
 
-.weitere-projekte-btn:hover {
-    background-color: var(--color-acent);
-    transform: translateY(-3px);
+.code {
+    overflow: hidden;
+    white-space: pre;
+    line-height: 0.8;
 }
+
+.line {
+    display: block;
+    opacity: 0;
+    animation: typing 1s steps(30) forwards;
+}
+
+.line:nth-child(1) { animation-delay: 1s; }
+.line:nth-child(2) { animation-delay: 2s; }
+.line:nth-child(3) { animation-delay: 3s; }
+.line:nth-child(4) { animation-delay: 4s; }
+.line:nth-child(5) { animation-delay: 5s; }
+.line:nth-child(6) { animation-delay: 6s; }
+
+/* Repetição da animação com intervalo */
+@keyframes typing {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes resetAnimation {
+    0%, 90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.project-code-animation {
+    animation: resetAnimation 9s ease-in-out infinite;
+}
+
+.project-image a {
+    display: block; /* Garante que o link ocupe toda a área da animação */
+    text-decoration: none; /* Remove sublinhado do link, se houver */
+}
+
 
 /* "Contact" Section Styles */
 .contact-icons {
@@ -445,10 +489,12 @@ ul.custom-bullets li::before {
     color: var(--color-main);
     font-size: 2.5rem;
     position: relative;
+    transition: font-size 0.3s ease, color 0.3s ease;
 }
 
 .contact-icons li a:hover {
     color: var(--color-acent);
+    font-size: 2.8rem;
 }
 
 .contact-icons li a[title]:hover::after {
