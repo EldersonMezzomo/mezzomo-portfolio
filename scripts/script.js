@@ -51,6 +51,8 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener("DOMContentLoaded", function () {
     const currentLangButton = document.getElementById('current-lang');
     const currentLangText = document.getElementById('current-lang-text'); // Span que mostra o código do idioma
+    const resumeLink = document.getElementById('resume-link');
+    const certificatesLink = document.getElementById('certificates-link');
     const langOptions = ['de', 'en', 'pt']; // Ciclo de idiomas
     let currentLangIndex = 0;
 
@@ -60,6 +62,25 @@ document.addEventListener("DOMContentLoaded", function () {
             .then(response => response.json())
             .then(data => applyTranslations(data))
             .catch(error => console.error('Erro ao carregar o arquivo de idioma:', error));
+
+        updateDownloadLinks(lang); // Atualiza os links conforme o idioma
+    }
+
+    function updateDownloadLinks(lang) {
+        const resumeFiles = {
+            'de': 'assets/documents/lebenslauf-frontend-elderson-luciano-mezzomo-v1.pdf',
+            'en': 'assets/documents/resume-frontend-elderson-luciano-mezzomo-v1.pdf',
+            'pt': 'assets/documents/curriculo-frontend-elderson-luciano-mezzomo-v1.pdf'
+        };
+        const certificatesFiles = {
+            'de': 'assets/documents/diplome-und-zertifikate.zip',
+            'en': 'assets/documents/certificates-and-diplomas.zip',
+            'pt': 'assets/documents/diplomas-e-certificados.zip'
+        };
+
+        // Atualiza os links
+        resumeLink.href = resumeFiles[lang];
+        certificatesLink.href = certificatesFiles[lang];
     }
 
     // Função para aplicar as traduções no site
@@ -139,34 +160,34 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-   // Função para alternar para o próximo idioma no ciclo (DE -> EN -> PT)
-   function switchLanguage() {
-    currentLangIndex = (currentLangIndex + 1) % langOptions.length; // Cicla entre 0, 1, 2
-    const newLang = langOptions[currentLangIndex];
-    
-    // Atualiza o texto do botão com o novo idioma
-    currentLangText.textContent = newLang.toUpperCase(); // Atualiza para "DE", "EN" ou "PT"
-    
-    // Carrega o novo idioma
-    loadLanguage(newLang);
+    // Função para alternar para o próximo idioma no ciclo (DE -> EN -> PT)
+    function switchLanguage() {
+        currentLangIndex = (currentLangIndex + 1) % langOptions.length; // Cicla entre 0, 1, 2
+        const newLang = langOptions[currentLangIndex];
 
-    // Salva o idioma escolhido no localStorage
-    localStorage.setItem('selectedLanguage', newLang);
-}
+        // Atualiza o texto do botão com o novo idioma
+        currentLangText.textContent = newLang.toUpperCase(); // Atualiza para "DE", "EN" ou "PT"
 
-// Carregar o idioma salvo no localStorage (se houver) ou usar 'de' como padrão
-const savedLang = localStorage.getItem('selectedLanguage');
-if (savedLang && langOptions.includes(savedLang)) {
-    currentLangIndex = langOptions.indexOf(savedLang);
-    currentLangText.textContent = savedLang.toUpperCase(); // Define o texto correto no botão
-    loadLanguage(savedLang); // Carrega o idioma salvo
-} else {
-    loadLanguage('de'); // Carrega o idioma alemão por padrão
-    currentLangText.textContent = 'DE'; // Define "DE" como o texto padrão
-}
+        // Carrega o novo idioma
+        loadLanguage(newLang);
 
-// Adiciona o evento de clique no botão de idioma para alternar o idioma
-currentLangButton.addEventListener('click', switchLanguage);
+        // Salva o idioma escolhido no localStorage
+        localStorage.setItem('selectedLanguage', newLang);
+    }
+
+    // Carregar o idioma salvo no localStorage (se houver) ou usar 'de' como padrão
+    const savedLang = localStorage.getItem('selectedLanguage');
+    if (savedLang && langOptions.includes(savedLang)) {
+        currentLangIndex = langOptions.indexOf(savedLang);
+        currentLangText.textContent = savedLang.toUpperCase(); // Define o texto correto no botão
+        loadLanguage(savedLang); // Carrega o idioma salvo
+    } else {
+        loadLanguage('de'); // Carrega o idioma alemão por padrão
+        currentLangText.textContent = 'DE'; // Define "DE" como o texto padrão
+    }
+
+    // Adiciona o evento de clique no botão de idioma para alternar o idioma
+    currentLangButton.addEventListener('click', switchLanguage);
 });
 
 
@@ -181,7 +202,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function switchTheme() {
         currentThemeIndex = (currentThemeIndex + 1) % themes.length; // Cicla entre os temas
         const newTheme = themes[currentThemeIndex]; // Seleciona o próximo tema
-        
+
         // Atualiza o href do link para carregar o novo tema a partir da pasta "styles"
         themeStylesheet.href = `styles/${newTheme}`;
 
