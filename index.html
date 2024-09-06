@@ -8,6 +8,51 @@
     <meta name="description"
         content="Portfolio von Elderson Luciano Mezzomo, einem engagierten Frontend-Entwickler spezialisiert auf JavaScript, HTML5 und CSS3.">
     <link rel="icon" href="assets/images/favicon.png" type="image/png">
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Elderson Luciano Mezzomo",
+          "jobTitle": "Frontend Developer",
+          "description": "Frontend Developer com forte domínio de JavaScript, HTML5, CSS3, focado em design responsivo, acessibilidade web e otimização SEO. Experiência em liderar projetos ágeis e na criação de soluções digitais inovadoras.",
+          "url": "https://mezzomo.de",
+          "sameAs": [
+            "https://www.linkedin.com/in/elderson-luciano-mezzomo",
+            "https://github.com/EldersonMezzomo"
+          ],
+          "worksFor": {
+            "@type": "Organization",
+            "name": "Freelancer"
+          },
+          "alumniOf": {
+            "@type": "CollegeOrUniversity",
+            "name": "AIEC - Tecnologia em Análise de Sistemas"
+          },
+          "knowsAbout": [
+            "JavaScript", "HTML5", "CSS3", "Responsive Web Design", "React", "Scrum", "Kanban", "SEO"
+          ],
+          "skills": [
+            "Frontend Development", "UI/UX Design", "Web Accessibility", "Project Management"
+          ],
+          "hasOccupation": {
+            "@type": "Occupation",
+            "name": "Frontend Developer"
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "Recrutamento",
+            "email": "eldersonmezzomo@hotmail.com",
+            "telephone": "+49 160 9246 8671"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Marburg",
+            "addressCountry": "Germany"
+          },
+          "image": "https://mezzomo.de/assets/images/profile-photo-large.webp"
+        }
+        </script>
+
     <!-- Stylesheets -->
     <link rel="stylesheet" href="styles/style.css">
     <link id="theme-stylesheet" rel="stylesheet" href="styles/thema-default.css">
@@ -60,28 +105,27 @@
             <h2 id="about-title">Über mich</h2>
             <div class="about-content">
                 <div class="profile-photo">
-                    <img src="assets/images/profile-photo.png" alt="Elderson Luciano Mezzomo" />
+                    <picture>
+                        <source srcset="assets/images/profile-photo-small.webp" type="image/webp"
+                            media="(max-width: 414px)">
+                        <source srcset="assets/images/profile-photo-small.png" type="image/png"
+                            media="(max-width: 414px)">
+                        <source srcset="assets/images/profile-photo-medium.webp" type="image/webp"
+                            media="(max-width: 768px)">
+                        <source srcset="assets/images/profile-photo-medium.png" type="image/png"
+                            media="(max-width: 768px)">
+                        <source srcset="assets/images/profile-photo-large.webp" type="image/webp">
+                        <img src="assets/images/profile-photo.png" alt="Elderson Luciano Mezzomo">
+                    </picture>
                 </div>
                 <div class="about-text">
+                    <h1 class="highlight">Ich bin Elderson Luciano Mezzomo, ein leidenschaftlicher und kreativer
+                        Frontend-Entwickler</h1>
                     <p id="about-text">
-                        Ich bin <span class="highlight">Elderson Luciano Mezzomo</span>, ein leidenschaftlicher
-                        und kreativer <strong>Frontend-Entwickler</strong> mit einem Schwerpunkt auf <strong>JavaScript,
-                            HTML5</strong>
-                        und <strong>CSS3</strong>. Mit meiner Erfahrung in der <strong>Teamführung</strong> und
-                        meinem analytischen Denkvermögen bringe ich eine einzigartige Kombination von
-                        technischen Fähigkeiten und <strong>kreativem Problemlösungsansatz</strong> in die
-                        <strong>IT-Branche</strong> ein.
-
-                        Mein Werdegang hat mich von den <strong>Geisteswissenschaften</strong> hin zu meiner
-                        Leidenschaft für exakte Wissenschaften und Technologie geführt, wo ich umfassende
-                        Kenntnisse in der <strong>Frontend-Entwicklung</strong> erworben habe. Mit
-                        kontinuierlicher Weiterbildung in modernen Frameworks wie <strong>React.js</strong>,
-                        strebe ich danach, meine technischen Fähigkeiten in einem <strong>dynamischen
-                            und innovativen Umfeld</strong> weiterzuentwickeln.
-
-                        Ich bin bereit, einen nachhaltigen Beitrag zur Entwicklung von digitalen
-                        Lösungen zu leisten und dabei meine Fähigkeiten in einem engagierten Team
-                        weiter zu verbessern.
+                        , mit einem Schwerpunkt auf <strong>JavaScript, HTML5</strong> und <strong>CSS3</strong>. Mit
+                        meiner Erfahrung in der <strong>Teamführung</strong> und meinem analytischen Denkvermögen bringe
+                        ich eine einzigartige Kombination von technischen Fähigkeiten und <strong>kreativem
+                            Problemlösungsansatz</strong> in die <strong>IT-Branche</strong> ein.
                     </p>
                     <a href="#kontakt" class="btn talk-btn">Lass uns sprechen</a>
                 </div>
@@ -108,9 +152,21 @@
             <div class="project">
                 <div class="project-image">
                     <a href="https://www.nuraybal.de/" target="_blank">
-                        <img src="assets/images/projekt-1.png" alt="Friseursalon">
+                        <picture>
+                            <source srcset="assets/images/projekt-1-small.webp" type="image/webp"
+                                media="(max-width: 414px)">
+                            <source srcset="assets/images/projekt-1-small.png" type="image/png"
+                                media="(max-width: 414px)">
+                            <source srcset="assets/images/projekt-1-medium.webp" type="image/webp"
+                                media="(max-width: 768px)">
+                            <source srcset="assets/images/projekt-1-medium.png" type="image/png"
+                                media="(max-width: 768px)">
+                            <source srcset="assets/images/projekt-1-large.webp" type="image/webp">
+                            <img src="assets/images/projekt-1-large.png" alt="Friseursalon">
+                        </picture>
                     </a>
                 </div>
+
                 <div class="project-details">
                     <h3><a href="https://www.nuraybal.de/" target="_blank">Nuray Bal</a></h3>
                     <div class="project-description">
@@ -145,10 +201,22 @@
             <!-- Projekt 2: Schlafklang -->
             <div class="project">
                 <div class="project-image">
-                    <a href="/projekte/schlafklang/index.html" target="_blank">
-                        <img src="assets/images/projekt-2.png" alt="Schlafklang">
+                    <a href="projekte/schlafklang/index.html" target="_blank">
+                        <picture>
+                            <source srcset="assets/images/projekt-2-small.webp" type="image/webp"
+                                media="(max-width: 414px)">
+                            <source srcset="assets/images/projekt-2-small.png" type="image/png"
+                                media="(max-width: 414px)">
+                            <source srcset="assets/images/projekt-2-medium.webp" type="image/webp"
+                                media="(max-width: 768px)">
+                            <source srcset="assets/images/projekt-2-medium.png" type="image/png"
+                                media="(max-width: 768px)">
+                            <source srcset="assets/images/projekt-2-large.webp" type="image/webp">
+                            <img src="assets/images/projekt-2-large.png" alt="Schlafklang">
+                        </picture>
                     </a>
                 </div>
+
                 <div class="project-details">
                     <h3><a href="/projekte/schlafklang/index.html" target="_blank">Schlafklang</a></h3>
                     <div class="project-description">
@@ -184,7 +252,18 @@
             <div class="project">
                 <div class="project-image">
                     <a href="https://central-caixa-html.vercel.app/" target="_blank">
-                        <img src="assets/images/projekt-3.png" alt="Central CAIXA">
+                        <picture>
+                            <source srcset="assets/images/projekt-3-small.webp" type="image/webp"
+                                media="(max-width: 414px)">
+                            <source srcset="assets/images/projekt-3-small.png" type="image/png"
+                                media="(max-width: 414px)">
+                            <source srcset="assets/images/projekt-3-medium.webp" type="image/webp"
+                                media="(max-width: 768px)">
+                            <source srcset="assets/images/projekt-3-medium.png" type="image/png"
+                                media="(max-width: 768px)">
+                            <source srcset="assets/images/projekt-3-large.webp" type="image/webp">
+                            <img src="assets/images/projekt-3-large.png" alt="Central CAIXA">
+                        </picture>
                     </a>
                 </div>
                 <div class="project-details">
@@ -241,7 +320,7 @@
                     </a>
                 </div>
                 <div class="project-details">
-                    <h3><a href="projekte/projekte.html">Weitere Projekte</a></h3>
+                    <h3><a href="projekte/projekte.html" id="weitere-projekte-title">Weitere Projekte</a></h3>
                     <div class="project-description weitere-projekte-description">
                         <p id="project-3-summary">
                             Entdecken Sie meine neuesten Projekte, die Innovation und Benutzerfreundlichkeit vereinen.
@@ -250,73 +329,74 @@
                         </p>
                     </div>
                     <div class="project-buttons">
-                        <a href="projekte/projekte.html" id="project-3-code-btn" class="btn">Weitere
-                            Projekte anzeigen</a>
+                        <a href="projekte/projekte.html" id="weitere-projekte-btn" class="btn">Weitere Projekte
+                            anzeigen</a>
                     </div>
                 </div>
             </div>
-        </section>
 
-        <!-- Contact Section -->
-        <section id="kontakt" class="container">
-            <h2 id="contact-title">Kontakt</h2>
-            <p id="contact-text">Sie können mich über die folgenden Kanäle erreichen:</p>
-            <ul class="contact-icons">
-                <li>
-                    <a href="tel:+4916092468671" title="+49 160 9246 8671">
-                        <i class="fas fa-phone"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="mailto:eldersonmezzomo@hotmail.com" title="E-Mail">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/elderson-luciano-mezzomo/" title="LinkedIn" target="_blank">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/EldersonMezzomo" title="GitHub" target="_blank">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </li>
-            </ul>
-        </section>
 
-        <!-- Downloads Section -->
-        <section id="downloads" class="container">
-            <h2 id="downloads-title">Downloads</h2>
-            <p id="downloads-text">Hier können Sie meinen Lebenslauf und meine Zertifikate herunterladen:</p>
-            <ul class="download-list">
-                <li id="download-resume">
-                    <a id="resume-link" href="assets/documents/lebenslauf-frontend-elderson-luciano-mezzomo-v1.pdf"
-                        download>
-                        - Bewerbungsunterlagen herunterladen (PDF)
-                    </a>
-                </li>
-                <li id="download-certificates">
-                    <a id="certificates-link" href="assets/documents/diplome-und-zertifikate.zip" download>
-                        - Diplome und Zertifikate herunterladen (ZIP)
-                    </a>
-                </li>
-            </ul>
+            <!-- Contact Section -->
+            <section id="kontakt" class="container">
+                <h2 id="contact-title">Kontakt</h2>
+                <p id="contact-text">Sie können mich über die folgenden Kanäle erreichen:</p>
+                <ul class="contact-icons">
+                    <li>
+                        <a href="tel:+4916092468671" title="+49 160 9246 8671">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:eldersonmezzomo@hotmail.com" title="E-Mail">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/elderson-luciano-mezzomo/" title="LinkedIn"
+                            target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/EldersonMezzomo" title="GitHub" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                </ul>
+            </section>
 
-            </ul>
-        </section>
+            <!-- Downloads Section -->
+            <section id="downloads" class="container">
+                <h2 id="downloads-title">Downloads</h2>
+                <p id="downloads-text">Hier können Sie meinen Lebenslauf und meine Zertifikate herunterladen:</p>
+                <ul class="download-list">
+                    <li id="download-resume">
+                        <a id="resume-link" href="assets/documents/lebenslauf-frontend-elderson-luciano-mezzomo-v1.pdf"
+                            download>
+                            - Bewerbungsunterlagen herunterladen (PDF)
+                        </a>
+                    </li>
+                    <li id="download-certificates">
+                        <a id="certificates-link" href="assets/documents/diplome-und-zertifikate.zip" download>
+                            - Diplome und Zertifikate herunterladen (ZIP)
+                        </a>
+                    </li>
+                </ul>
+
+                </ul>
+            </section>
     </main>
 
     <!-- Footer -->
     <footer>
         <nav id="footer-nav">
             <ul class="footer-menu">
-                <li><a href="#about">Über mich</a></li>
-                <li><a href="#fertigkeiten">Fertigkeiten</a></li>
-                <li><a href="#projekte">Projekte</a></li>
-                <li><a href="#kontakt">Kontakt</a></li>
-                <li><a href="#downloads">Downloads</a></li>
-                <li><a href="projekte/projekte.html">Weitere Projekte</a></li>
+                <li><a href="#about" id="footer-about">Über mich</a></li>
+                <li><a href="#fertigkeiten" id="footer-skills">Fertigkeiten</a></li>
+                <li><a href="#projekte" id="footer-projects">Projekte</a></li>
+                <li><a href="#kontakt" id="footer-contact">Kontakt</a></li>
+                <li><a href="#downloads" id="footer-downloads">Downloads</a></li>
+                <li><a href="projekte/projekte.html" id="footer-more-projects">Weitere Projekte</a></li>
             </ul>
         </nav>
         <p id="footer-text">&copy; 2024 Elderson Luciano Mezzomo - Leidenschaftlicher Frontend-Entwickler aus Marburg,

@@ -1,76 +1,90 @@
 {
   "nav": {
-    "about": "Sobre mim",
-    "fertigkeiten": "Habilidades",
+    "about": "Sobre Mim",
+    "fertigkeiten": "Competências",
     "projekte": "Projetos",
-    "kontakt": "Contato",
+    "kontakt": "Contacto",
     "downloads": "Downloads"
   },
   "about": {
     "title": "Sobre mim",
-    "text": "Sou Elderson Luciano Mezzomo, um desenvolvedor Frontend dedicado e criativo, com paixão por JavaScript, HTML5 e CSS3. Tenho uma combinação única de experiência em liderança de equipes, pensamento analítico e conhecimentos sólidos em desenvolvimento Frontend. Com paixão pelas ciências exatas, adquiri habilidades aprofundadas em desenvolvimento Frontend e agora busco aprimorar minhas habilidades técnicas em um ambiente dinâmico e inovador."
+    "h1": "Eu sou Elderson Luciano Mezzomo, um desenvolvedor Frontend apaixonado e criativo",
+    "text": "Com um foco em JavaScript, HTML5 e CSS3. Com a minha experiência em liderança de equipas e o meu pensamento analítico, trago uma combinação única de competências técnicas e uma abordagem criativa para a resolução de problemas na indústria de TI. A minha trajetória levou-me das ciências humanas para a minha paixão pelas ciências exatas e tecnologia, onde adquiri conhecimentos abrangentes no desenvolvimento frontend. Com formação contínua em frameworks modernos como o React.js, procuro desenvolver ainda mais as minhas competências técnicas num ambiente dinâmico e inovador. Estou preparado para contribuir de forma sustentável para o desenvolvimento de soluções digitais e melhorar as minhas capacidades numa equipa dedicada."
   },
   "skills": {
-    "title": "Habilidades",
+    "title": "Competências",
     "skill1": "Desenvolvimento Frontend: JavaScript, HTML5, CSS3",
     "skill2": "Ferramentas de Design: Figma, Canva, Adobe Photoshop, Adobe Illustrator",
-    "skill3": "Gerenciamento de Projetos e Métodos Ágeis: Scrum, Kanban",
-    "skill4": "Resolução de Problemas e Habilidades Analíticas",
+    "skill3": "Gestão de Projetos e Métodos Ágeis: Scrum, Kanban",
+    "skill4": "Resolução de Problemas e Competências Analíticas",
     "skill5": "Software e Ferramentas: Git, VS Code, Google Cloud"
   },
   "projects": {
     "title": "Projetos",
     "project1": {
-      "desc": "O site para o salão de beleza 'Nuray Bal' em Marburg foi desenvolvido para apresentar os serviços e o ambiente do salão de forma atraente e amigável.",
+      "desc": "O website para o salão de cabeleireiro 'Nuray Bal' em Marburg foi desenvolvido para mostrar os serviços e o ambiente do salão de forma apelativa e fácil de usar.",
       "technologiesTitle": "Tecnologias:",
-      "html": "HTML: Uso de HTML5 semântico para uma estrutura clara e acessível e a implementação de um vídeo de fundo na página inicial.",
-      "css": "CSS: Técnicas flexíveis com variáveis CSS para uma paleta de cores e design consistente, que se adapta de forma responsiva a diferentes tamanhos de tela. Efeitos de transição para uma experiência de usuário suave.",
-      "js": "JavaScript: Alternância dinâmica de idiomas e elementos de cabeçalho personalizáveis que melhoram a experiência do usuário.",
-      "conclusion": "Conclusão: Este projeto demonstra minha capacidade de criar sites profissionais e amigáveis com tecnologias web modernas.",
+      "html": "HTML: Uso de HTML5 semântico para uma estrutura clara e acessível e implementação de um vídeo na página inicial.",
+      "css": "CSS: Técnicas flexíveis com variáveis CSS para uma paleta de cores e design consistente, adaptável a diferentes tamanhos de ecrã. Efeitos de transição para uma experiência de utilizador suave.",
+      "js": "JavaScript: Alternância dinâmica de idiomas e elementos de cabeçalho personalizáveis para melhorar a experiência do utilizador.",
+      "conclusion": "Conclusão: Este projeto demonstra a minha capacidade de criar websites profissionais e fáceis de usar com tecnologias web modernas.",
       "codeBtn": "Ver Código",
       "viewBtn": "Ver Projeto"
     },
     "project2": {
-      "desc": "Schlafklang é uma aplicação web interativa que ajuda os usuários a criar um ambiente de sono relaxante, permitindo que selecionem um temporizador, um vídeo de fundo e uma música de sua preferência.",
+      "desc": "Schlafklang é uma aplicação web interativa que ajuda os utilizadores a criar um ambiente de sono relaxante, escolhendo um temporizador de contagem decrescente, vídeo de fundo e música conforme as suas preferências.",
       "technologiesTitle": "Tecnologias:",
-      "html": "HTML: Estrutura clara das opções de seleção (temporizador, fundo e música) para uma operação intuitiva.",
-      "css": "CSS: Design minimalista com cores escuras e animações sutis para apoiar a atmosfera relaxante. Flexibilidade através de variáveis CSS.",
-      "js": "JavaScript: Controle do volume e do modo de tela cheia com base no tempo restante, proporcionando uma experiência de usuário perfeita.",
-      "conclusion": "Conclusão: Schlafklang mostra minhas habilidades no desenvolvimento de aplicações web interativas e centradas no usuário, que são funcionais e esteticamente agradáveis.",
+      "html": "HTML: Estruturação clara das opções (temporizador, fundo e música) para uma operação intuitiva.",
+      "css": "CSS: Design minimalista com cores escuras e animações subtis para suportar uma atmosfera relaxante. Flexibilidade através de variáveis CSS.",
+      "js": "JavaScript: Controla o volume e o modo de ecrã completo com base no tempo restante, proporcionando uma experiência de utilizador contínua.",
+      "conclusion": "Conclusão: Schlafklang demonstra as minhas competências no desenvolvimento de aplicações web interativas e centradas no utilizador, que são funcionais e esteticamente agradáveis.",
       "codeBtn": "Ver Código",
       "viewBtn": "Ver Projeto"
     },
     "project3": {
-      "desc": "Central CAIXA reúne todos os aplicativos, redes sociais e canais de suporte da CAIXA ECONÔMICA FEDERAL em um só lugar. O objetivo do aplicativo é reduzir barreiras digitais, especialmente para usuários com baixa competência digital.",
+      "desc": "Central CAIXA reúne todas as aplicações, redes sociais e canais de suporte da CAIXA ECONÔMICA FEDERAL num só lugar. A aplicação visa reduzir as barreiras digitais, especialmente para utilizadores com poucas competências digitais.",
       "technologiesTitle": "Tecnologias:",
-      "html": "HTML: Seções bem estruturadas que permitem uma navegação intuitiva entre aplicativos, sites e redes sociais.",
-      "css": "CSS: Diferenciação de cores entre aplicativos instalados e não instalados para orientar visualmente os usuários, apoiado por animações CSS e transições.",
-      "js": "JavaScript: Detecção de aplicativos instalados no dispositivo do usuário e integração perfeita com as lojas de aplicativos correspondentes para downloads.",
-      "conclusion": "Responsabilidade Social: Este projeto promove a inclusão digital e facilita o acesso a serviços essenciais para todos os usuários.",
-      "conclusionFinal": "Conclusão: Central CAIXA demonstra minha capacidade de desenvolver aplicações amigáveis e inclusivas que oferecem um valor social.",
+      "html": "HTML: Secções bem estruturadas que permitem uma navegação intuitiva entre aplicações, websites e redes sociais.",
+      "css": "CSS: Distinção de cores entre aplicações instaladas e não instaladas para orientação visual, suportada por animações e transições em CSS.",
+      "js": "JavaScript: Deteção de aplicações instaladas no dispositivo do utilizador e integração com as respetivas lojas de aplicações para downloads.",
+      "conclusion": "Responsabilidade Social: Este projeto promove a inclusão digital e facilita o acesso a serviços importantes para todos os utilizadores.",
+      "conclusionFinal": "Conclusão: Central CAIXA demonstra a minha capacidade de desenvolver aplicações fáceis de usar e inclusivas, que oferecem valor social.",
       "codeBtn": "Ver Código",
       "viewBtn": "Ver Projeto"
+    },
+    "weitereProjekte": {
+      "title": "Mais Projetos",
+      "desc": "Descubra os meus projetos mais recentes, que combinam inovação e facilidade de utilização.",
+      "viewBtn": "Ver Mais Projetos"
     }
   },
   "contact": {
-    "title": "Contato",
-    "text": "Você pode me contactar através dos seguintes canais:"
+    "title": "Contacto",
+    "text": "Pode contactar-me através dos seguintes canais:"
   },
   "downloads": {
     "title": "Downloads",
-    "text": "Aqui você pode baixar meu currículo e certificados:",
+    "text": "Aqui pode descarregar o meu currículo e certificados:",
     "items": {
-      "resume": "Baixar Currículo (PDF)",
-      "certificates": "Baixar Diplomas e Certificados (ZIP)"
+      "resume": "Descarregar Currículo (PDF)",
+      "certificates": "Descarregar Diplomas e Certificados (ZIP)"
     }
   },
   "footer": {
+    "menu": {
+      "about": "Sobre Mim",
+      "skills": "Competências",
+      "projects": "Projetos",
+      "contact": "Contacto",
+      "downloads": "Downloads",
+      "moreProjects": "Mais Projetos"
+    },
     "text": "&copy; 2024 Elderson Luciano Mezzomo - Desenvolvedor Frontend apaixonado de Marburg, Alemanha."
   },
   "general": {
-    "talkBtn": "Vamos conversar",
-    "readMoreBtn": "Ver mais",
-    "readLessBtn": "Ver menos",
+    "talkBtn": "Vamos Conversar",
+    "readMoreBtn": "Mostrar Mais",
+    "readLessBtn": "Mostrar Menos",
     "languageTooltip": "Idioma"
   }
 }

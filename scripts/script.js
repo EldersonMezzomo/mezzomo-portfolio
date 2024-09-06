@@ -96,7 +96,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // About Section
         document.getElementById('about-title').textContent = translations.about.title;
+        document.querySelector('.about-text h1').textContent = translations.about.h1;
         document.getElementById('about-text').textContent = translations.about.text;
+
+
         document.querySelectorAll('.talk-btn').forEach(btn => {
             btn.textContent = translations.general.talkBtn;
         });
@@ -138,6 +141,9 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById('project-3-conclusion-final').textContent = translations.projects.project3.conclusionFinal;
         document.getElementById('project-3-code-btn').textContent = translations.projects.project3.codeBtn;
         document.getElementById('project-3-view-btn').textContent = translations.projects.project3.viewBtn;
+        document.getElementById('weitere-projekte-title').textContent = translations.projects.weitereProjekte.title;
+        document.getElementById('project-3-summary').textContent = translations.projects.weitereProjekte.desc;
+        document.getElementById('weitere-projekte-btn').textContent = translations.projects.weitereProjekte.viewBtn;
 
         // Contact Section
         document.getElementById('contact-title').textContent = translations.contact.title;
@@ -147,7 +153,13 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById('downloads-title').textContent = translations.downloads.title;
         document.getElementById('downloads-text').textContent = translations.downloads.text;
 
-        // Footer
+        // Footer Menu Links
+        document.getElementById('footer-about').textContent = translations.footer.menu.about;
+        document.getElementById('footer-skills').textContent = translations.footer.menu.skills;
+        document.getElementById('footer-projects').textContent = translations.footer.menu.projects;
+        document.getElementById('footer-contact').textContent = translations.footer.menu.contact;
+        document.getElementById('footer-downloads').textContent = translations.footer.menu.downloads;
+        document.getElementById('footer-more-projects').textContent = translations.footer.menu.moreProjects;
         document.getElementById('footer-text').innerHTML = translations.footer.text;
 
         // Atualiza os botões de "Ver mais" e "Ver menos" conforme a linguagem

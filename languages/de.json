@@ -8,7 +8,8 @@
   },
   "about": {
     "title": "Über mich",
-    "text": "Ich bin Elderson Luciano Mezzomo, ein leidenschaftlicher und kreativer Frontend-Entwickler mit einem Schwerpunkt auf JavaScript, HTML5 und CSS3. Mit meiner Erfahrung in der Teamführung und meinem analytischen Denkvermögen bringe ich eine einzigartige Kombination von technischen Fähigkeiten und kreativem Problemlösungsansatz in die IT-Branche ein. Mein Werdegang hat mich von den Geisteswissenschaften hin zu meiner Leidenschaft für exakte Wissenschaften und Technologie geführt, wo ich umfassende Kenntnisse in der Frontend-Entwicklung erworben habe. Mit kontinuierlicher Weiterbildung in modernen Frameworks wie React.js, strebe ich danach, meine technischen Fähigkeiten in einem dynamischen und innovativen Umfeld weiterzuentwickeln. Ich bin bereit, einen nachhaltigen Beitrag zur Entwicklung von digitalen Lösungen zu leisten und dabei meine Fähigkeiten in einem engagierten Team weiter zu verbessern."
+    "h1": "Ich bin Elderson Luciano Mezzomo, ein leidenschaftlicher und kreativer Frontend-Entwickler",
+    "text": "Mit einem Schwerpunkt auf JavaScript, HTML5 und CSS3. Mit meiner Erfahrung in der Teamführung und meinem analytischen Denkvermögen bringe ich eine einzigartige Kombination von technischen Fähigkeiten und kreativem Problemlösungsansatz in die IT-Branche ein. Mein Werdegang hat mich von den Geisteswissenschaften hin zu meiner Leidenschaft für exakte Wissenschaften und Technologie geführt, wo ich umfassende Kenntnisse in der Frontend-Entwicklung erworben habe. Mit kontinuierlicher Weiterbildung in modernen Frameworks wie React.js strebe ich danach, meine technischen Fähigkeiten in einem dynamischen und innovativen Umfeld weiterzuentwickeln. Ich bin bereit, einen nachhaltigen Beitrag zur Entwicklung von digitalen Lösungen zu leisten und dabei meine Fähigkeiten in einem engagierten Team weiter zu verbessern."
   },
   "skills": {
     "title": "Fertigkeiten",
@@ -21,7 +22,7 @@
   "projects": {
     "title": "Projekte",
     "project1": {
-      "desc": "Die Webseite für den Friseursalon \"Nuray Bal\" in Marburg wurde entwickelt, um die Dienstleistungen und das Ambiente des Salons ansprechend und benutzerfreundlich darzustellen.",
+      "desc": "Die Webseite für den Friseursalon 'Nuray Bal' in Marburg wurde entwickelt, um die Dienstleistungen und das Ambiente des Salons ansprechend und benutzerfreundlich darzustellen.",
       "technologiesTitle": "Technologien:",
       "html": "HTML: Verwendung von semantischem HTML5 für eine klare, zugängliche Struktur und die Implementierung einer Video-Einbettung auf der Startseite.",
       "css": "CSS: Flexible Techniken mit CSS-Variablen für eine konsistente Farb- und Designpalette, die sich responsiv an verschiedene Bildschirmgrößen anpasst. Übergangseffekte für eine sanfte Benutzererfahrung.",
@@ -50,6 +51,11 @@
       "conclusionFinal": "Fazit: Central CAIXA zeigt meine Fähigkeit, benutzerfreundliche und inklusive Anwendungen zu entwickeln, die einen sozialen Mehrwert bieten.",
       "codeBtn": "Code ansehen",
       "viewBtn": "Projekt ansehen"
+    },
+    "weitereProjekte": {
+      "title": "Weitere Projekte",
+      "desc": "Entdecken Sie meine neuesten Projekte, die Innovation und Benutzerfreundlichkeit vereinen.",
+      "viewBtn": "Weitere Projekte ansehen"
     }
   },
   "contact": {
@@ -65,6 +71,14 @@
     }
   },
   "footer": {
+    "menu": {
+      "about": "Über mich",
+      "skills": "Fertigkeiten",
+      "projects": "Projekte",
+      "contact": "Kontakt",
+      "downloads": "Downloads",
+      "moreProjects": "Weitere Projekte"
+    },
     "text": "&copy; 2024 Elderson Luciano Mezzomo - Leidenschaftlicher Frontend-Entwickler aus Marburg, Deutschland."
   },
   "general": {

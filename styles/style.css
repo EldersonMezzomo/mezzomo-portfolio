@@ -277,6 +277,16 @@ h2::after {
     margin-left: 1.25rem;
 }
 
+.about-text h1 {
+    font-size: var(--font-size-base);
+    font-weight: normal;
+    color: var(--color-text);
+    line-height: 1.6;
+    margin: 0;
+    display: inline;
+}
+
+
 .talk-btn {
     width: 40%;
     display: block;
@@ -329,12 +339,12 @@ ul.custom-bullets li::before {
 
 .project-image {
     flex: 1;
+    width: 100%;
 }
 
 .project-image img {
     max-width: 100%;
     border-radius: 0.5rem;
-
     transition: transform 0.3s ease;
 }
 
@@ -422,12 +432,15 @@ ul.custom-bullets li::before {
     background-color: var(--color-text);
     padding: 1rem;
     border-radius: 8px;
-    max-width: 300px;
-    margin-right: 2rem;
+    width: 100%;
+    max-width: 100%;
+    margin-right: 0;
     color: var(--color-basic);
     font-family: 'Courier New', Courier, monospace;
     font-size: 0.8rem;
+    box-sizing: border-box;
 }
+
 
 .code {
     overflow: hidden;
@@ -468,8 +481,8 @@ ul.custom-bullets li::before {
 }
 
 .project-image a {
-    display: block; /* Garante que o link ocupe toda a área da animação */
-    text-decoration: none; /* Remove sublinhado do link, se houver */
+    display: block;
+    text-decoration: none;
 }
 
 
