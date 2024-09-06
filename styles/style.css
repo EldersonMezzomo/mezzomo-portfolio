@@ -249,6 +249,28 @@ h2::after {
     background-color: var(--color-main);
 }
 
+.main-heading {
+    font-size: var(--font-size-lg);
+    /* Tamanho igual ao h2 */
+    font-weight: 400;
+    color: var(--color-main);
+    margin-top: 9rem;
+    margin-bottom: 3rem;
+    position: relative;
+    padding-bottom: 0.625rem;
+    display: flex;
+    align-items: center;
+}
+
+.main-heading::after {
+    content: '';
+    flex-grow: 1;
+    margin-left: 1.25rem;
+    height: 0.0625rem;
+    background-color: var(--color-main);
+}
+
+
 /* "About Me" Section Styles */
 .about-content {
     display: flex;
@@ -288,7 +310,7 @@ h2::after {
 
 .about-text p {
     display: inline;
-   }
+}
 
 .talk-btn {
     width: 40%;

@@ -194,12 +194,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-//alternância de temas:
+// Alternância de temas:
 document.addEventListener('DOMContentLoaded', function () {
     const paletteBtn = document.getElementById('palette-btn');
     const themeStylesheet = document.getElementById('theme-stylesheet');
     const themes = ['thema-default.css', 'thema-dark.css', 'thema-light.css', 'thema-retro.css', 'thema-futuristic.css'];
     let currentThemeIndex = 0;
+
+    // Verifica se a página está na pasta "projekte"
+    const isOtherProjectsPage = window.location.pathname.includes("projekte");
+
+    // Define o caminho correto para a pasta "styles"
+    const themePath = isOtherProjectsPage ? '../styles/' : 'styles/';
 
     // Função para alternar entre os temas
     function switchTheme() {
@@ -207,7 +213,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const newTheme = themes[currentThemeIndex];
 
         // Atualiza o href do link para carregar o novo tema a partir da pasta "styles"
-        themeStylesheet.href = `styles/${newTheme}`;
+        themeStylesheet.href = `${themePath}${newTheme}`;
 
         // Salva o tema selecionado no localStorage para lembrar na próxima visita
         localStorage.setItem('selectedTheme', newTheme);
@@ -216,13 +222,14 @@ document.addEventListener('DOMContentLoaded', function () {
     // Carregar o tema salvo no localStorage, se houver
     const savedTheme = localStorage.getItem('selectedTheme');
     if (savedTheme) {
-        themeStylesheet.href = `styles/${savedTheme}`;
+        themeStylesheet.href = `${themePath}${savedTheme}`;
         currentThemeIndex = themes.indexOf(savedTheme);
     }
 
     // Adicionar evento de clique ao botão de paleta para alternar entre os temas
     paletteBtn.addEventListener('click', switchTheme);
 });
+
 
 
 
