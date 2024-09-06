@@ -68,9 +68,11 @@
     "title": "Contact",
     "text": "You can reach me through the following channels:"
   },
-  "downloads": {
-    "title": "Downloads",
-    "text": "Here you can download my <strong>resume</strong> and <strong>certificates</strong>:"
+    "downloads": {
+      "title": "Downloads",
+      "text": "Here you can download my <strong>resume</strong> and <strong>certificates</strong>:",
+      "resumeText": "Download resume (PDF)",
+      "certificatesText": "Download certificates and diplomas (ZIP)"
   },
   "footer": {
     "menu": {

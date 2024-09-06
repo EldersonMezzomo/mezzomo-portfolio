@@ -68,9 +68,11 @@
     "title": "Contato",
     "text": "Você pode me contatar pelos seguintes canais:"
   },
-  "downloads": {
-    "title": "Downloads",
-    "text": "Aqui você pode baixar meu <strong>currículo</strong> e meus <strong>certificados</strong>:"
+    "downloads": {
+      "title": "Downloads",
+      "text": "Aqui você pode baixar meu <strong>currículo</strong> e meus <strong>certificados</strong>:",
+      "resumeText": "Baixar currículo (PDF)",
+      "certificatesText": "Baixar certificados e diplomas (ZIP)"
   },
   "footer": {
     "menu": {

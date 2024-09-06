@@ -68,9 +68,11 @@
     "title": "Kontakt",
     "text": "Sie können mich über die folgenden Kanäle erreichen:"
   },
-  "downloads": {
-    "title": "Downloads",
-    "text": "Hier können Sie meinen <strong>Lebenslauf</strong> und meine <strong>Zertifikate</strong> herunterladen:"
+    "downloads": {
+      "title": "Herunterladen",
+      "text": "Hier können Sie meinen <strong>Lebenslauf</strong> und meine <strong>Zertifikate</strong> herunterladen:",
+      "resumeText": "Lebenslauf herunterladen (PDF)",
+      "certificatesText": "Zertifikate und Diplome herunterladen (ZIP)"
   },
   "footer": {
     "menu": {
