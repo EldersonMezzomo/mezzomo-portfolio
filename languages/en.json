@@ -6,55 +6,61 @@
     "kontakt": "Contact",
     "downloads": "Downloads"
   },
+  "general": {
+    "languageTooltip": "Change Language",
+    "talkBtn": "Let's Talk",
+    "readMoreBtn": "Read More",
+    "readLessBtn": "Read Less"
+  },
   "about": {
     "title": "About Me",
-    "h1": "I am Elderson Luciano Mezzomo, a passionate and creative Frontend Developer",
-    "text": "With a focus on JavaScript, HTML5, and CSS3. With my experience in team leadership and analytical thinking, I bring a unique combination of technical skills and a creative problem-solving approach to the IT industry. My career path has taken me from the humanities to my passion for exact sciences and technology, where I have gained extensive knowledge in frontend development. With continuous education in modern frameworks like React.js, I strive to further develop my technical skills in a dynamic and innovative environment. I am ready to make a lasting contribution to the development of digital solutions and improve my skills within a dedicated team."
+    "h1": "I am <strong>Elderson Luciano Mezzomo</strong>, a passionate and creative <strong>Frontend Developer</strong>,",
+    "text": "with a focus on <strong>JavaScript, HTML5</strong>, and <strong>CSS3</strong>. With my experience in <strong>team leadership</strong> and analytical thinking, I bring a unique combination of technical skills and <strong>creative problem-solving</strong> approaches to the <strong>IT industry</strong>. My career has taken me from the <strong>humanities</strong> to my passion for exact sciences and <strong>technology</strong>, where I gained comprehensive knowledge in <strong>frontend development</strong>. With continuous education in modern frameworks like <strong>React.js</strong>, I aim to further develop my technical skills in a <strong>dynamic and innovative environment</strong>. I am ready to make a lasting contribution to the development of <strong>digital solutions</strong> while further improving my skills in a <strong>dedicated team</strong>."
   },
   "skills": {
     "title": "Skills",
-    "skill1": "Frontend Development: JavaScript, HTML5, CSS3",
-    "skill2": "Design Tools: Figma, Canva, Adobe Photoshop, Adobe Illustrator",
-    "skill3": "Project Management and Agile Methods: Scrum, Kanban",
-    "skill4": "Problem-solving and Analytical Skills",
-    "skill5": "Software and Tools: Git, VS Code, Google Cloud"
+    "skill1": "<strong>Frontend Development:</strong> JavaScript, HTML5, CSS3",
+    "skill2": "<strong>Design Tools:</strong> Figma, Canva, Adobe Photoshop, Adobe Illustrator",
+    "skill3": "<strong>Project Management and Agile Methods:</strong> Scrum, Kanban",
+    "skill4": "<strong>Problem-solving</strong> and <strong>analytical skills</strong>",
+    "skill5": "<strong>Software and Tools:</strong> Git, VS Code, Google Cloud"
   },
   "projects": {
     "title": "Projects",
     "project1": {
-      "desc": "The website for the 'Nuray Bal' hair salon in Marburg was developed to showcase the salon's services and atmosphere in an appealing and user-friendly manner.",
-      "technologiesTitle": "Technologies:",
-      "html": "HTML: Use of semantic HTML5 for clear, accessible structure and implementation of a video embed on the homepage.",
-      "css": "CSS: Flexible techniques with CSS variables for a consistent color and design palette, responsive to different screen sizes. Transition effects for a smooth user experience.",
-      "js": "JavaScript: Dynamic language switching and customizable header elements to enhance user experience.",
-      "conclusion": "Conclusion: This project demonstrates my ability to create professional and user-friendly websites using modern web technologies.",
-      "codeBtn": "View Code",
-      "viewBtn": "View Project"
+      "desc": "The website for the \"Nuray Bal\" hair salon in Marburg was developed to present the salon's services and ambiance in an appealing and user-friendly manner.",
+      "technologiesTitle": "<strong>Technologies:</strong>",
+      "html": "<strong>HTML:</strong> Use of semantic HTML5 for clear, accessible structure and embedding a video on the homepage.",
+      "css": "<strong>CSS:</strong> Flexible techniques with CSS variables for a consistent color and design palette, responsive to different screen sizes. Transition effects for a smooth user experience.",
+      "js": "<strong>JavaScript:</strong> Dynamic language switching and customizable header elements to enhance user experience.",
+      "conclusion": "<strong>Conclusion:</strong> This project demonstrates my ability to create professional and user-friendly websites using modern web technologies.",
+      "codeBtn": "Code",
+      "viewBtn": "View"
     },
     "project2": {
-      "desc": "Schlafklang is an interactive web application that helps users create a calming sleep environment by selecting a countdown timer, background video, and music of their choice.",
-      "technologiesTitle": "Technologies:",
-      "html": "HTML: Clear structuring of options (timer, background, and music) for intuitive operation.",
-      "css": "CSS: Minimalist design with dark colors and subtle animations to support a relaxing atmosphere. Flexibility through CSS variables.",
-      "js": "JavaScript: Controls volume and fullscreen mode based on remaining time, providing a seamless user experience.",
-      "conclusion": "Conclusion: Schlafklang demonstrates my skills in developing interactive and user-centered web applications that are both functional and aesthetically pleasing.",
-      "codeBtn": "View Code",
-      "viewBtn": "View Project"
+      "desc": "Schlafklang is an interactive web application that helps users create a calming sleep environment by choosing a countdown timer, background video, and music to suit their preferences.",
+      "technologiesTitle": "<strong>Technologies:</strong>",
+      "html": "<strong>HTML:</strong> Clear structuring of options (timer, background, and music) for intuitive operation.",
+      "css": "<strong>CSS:</strong> Minimalist design with dark colors and subtle animations to support a relaxing atmosphere. Flexibility through CSS variables.",
+      "js": "<strong>JavaScript:</strong> Volume control and full-screen mode based on remaining time, providing a seamless user experience.",
+      "conclusion": "<strong>Conclusion:</strong> Schlafklang showcases my skills in developing interactive and user-centric web applications that are both functional and aesthetically pleasing.",
+      "codeBtn": "Code",
+      "viewBtn": "View"
     },
     "project3": {
-      "desc": "Central CAIXA brings together all apps, social networks, and support channels of CAIXA ECONÔMICA FEDERAL in one place. The app aims to reduce digital barriers, especially for users with limited digital skills.",
-      "technologiesTitle": "Technologies:",
-      "html": "HTML: Well-structured sections that allow intuitive navigation between apps, websites, and social networks.",
-      "css": "CSS: Color distinction between installed and non-installed apps for visual guidance, supported by CSS animations and transitions.",
-      "js": "JavaScript: Detects installed apps on the user's device and seamlessly integrates them with the corresponding app stores for downloads.",
-      "conclusion": "Social Responsibility: This project promotes digital inclusion and makes it easier for all users to access important services.",
-      "conclusionFinal": "Conclusion: Central CAIXA showcases my ability to develop user-friendly and inclusive applications that provide social value.",
-      "codeBtn": "View Code",
-      "viewBtn": "View Project"
+      "desc": "Central CAIXA unites all apps, social networks, and support channels of CAIXA ECONÔMICA FEDERAL in one place. The app aims to reduce digital barriers, especially for users with low digital literacy.",
+      "technologiesTitle": "<strong>Technologies:</strong>",
+      "html": "<strong>HTML:</strong> Well-structured sections that enable intuitive navigation between apps, websites, and social networks.",
+      "css": "<strong>CSS:</strong> Color distinction between installed and uninstalled apps for visual guidance, supported by CSS animations and transitions.",
+      "js": "<strong>JavaScript:</strong> Detection of installed apps on the user's device and seamless integration into the respective app stores for downloads.",
+      "conclusion": "<strong>Social Responsibility:</strong> This project promotes digital inclusion and facilitates access to essential services for all users.",
+      "conclusionFinal": "<strong>Conclusion:</strong> Central CAIXA demonstrates my ability to develop user-friendly and inclusive applications that provide social value.",
+      "codeBtn": "Code",
+      "viewBtn": "View"
     },
     "weitereProjekte": {
       "title": "More Projects",
-      "desc": "Discover my latest projects that combine innovation and user-friendliness.",
+      "desc": "Discover my latest projects that combine innovation and user-friendliness. Click here to learn more about my work and how it enhances the digital experience.",
       "viewBtn": "View More Projects"
     }
   },
@@ -64,11 +70,7 @@
   },
   "downloads": {
     "title": "Downloads",
-    "text": "Here you can download my resume and certificates:",
-    "items": {
-      "resume": "Download Resume (PDF)",
-      "certificates": "Download Diplomas and Certificates (ZIP)"
-    }
+    "text": "Here you can download my <strong>resume</strong> and <strong>certificates</strong>:"
   },
   "footer": {
     "menu": {
@@ -80,11 +82,5 @@
       "moreProjects": "More Projects"
     },
     "text": "&copy; 2024 Elderson Luciano Mezzomo - Passionate Frontend Developer from Marburg, Germany."
-  },
-  "general": {
-    "talkBtn": "Let's Talk",
-    "readMoreBtn": "Show More",
-    "readLessBtn": "Show Less",
-    "languageTooltip": "Language"
   }
 }

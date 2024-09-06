@@ -280,12 +280,15 @@ h2::after {
 .about-text h1 {
     font-size: var(--font-size-base);
     font-weight: normal;
-    color: var(--color-text);
-    line-height: 1.6;
-    margin: 0;
     display: inline;
+    color: var(--color-text);
+    margin: 0;
+    padding: 0;
 }
 
+.about-text p {
+    display: inline; /* Faz o parágrafo se comportar como texto inline */
+}
 
 .talk-btn {
     width: 40%;

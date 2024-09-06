@@ -6,56 +6,62 @@
     "kontakt": "Kontakt",
     "downloads": "Downloads"
   },
+  "general": {
+    "languageTooltip": "Sprache ändern",
+    "talkBtn": "Lass uns sprechen",
+    "readMoreBtn": "Mehr anzeigen",
+    "readLessBtn": "Weniger anzeigen"
+  },
   "about": {
     "title": "Über mich",
-    "h1": "Ich bin Elderson Luciano Mezzomo, ein leidenschaftlicher und kreativer Frontend-Entwickler",
-    "text": "Mit einem Schwerpunkt auf JavaScript, HTML5 und CSS3. Mit meiner Erfahrung in der Teamführung und meinem analytischen Denkvermögen bringe ich eine einzigartige Kombination von technischen Fähigkeiten und kreativem Problemlösungsansatz in die IT-Branche ein. Mein Werdegang hat mich von den Geisteswissenschaften hin zu meiner Leidenschaft für exakte Wissenschaften und Technologie geführt, wo ich umfassende Kenntnisse in der Frontend-Entwicklung erworben habe. Mit kontinuierlicher Weiterbildung in modernen Frameworks wie React.js strebe ich danach, meine technischen Fähigkeiten in einem dynamischen und innovativen Umfeld weiterzuentwickeln. Ich bin bereit, einen nachhaltigen Beitrag zur Entwicklung von digitalen Lösungen zu leisten und dabei meine Fähigkeiten in einem engagierten Team weiter zu verbessern."
+    "h1": "Ich bin <strong>Elderson Luciano Mezzomo</strong>, ein leidenschaftlicher und kreativer <strong>Frontend-Entwickler</strong>,",
+    "text": "mit einem Schwerpunkt auf <strong>JavaScript, HTML5</strong> und <strong>CSS3</strong>. Mit meiner Erfahrung in der <strong>Teamführung</strong> und meinem analytischen Denkvermögen bringe ich eine einzigartige Kombination von technischen Fähigkeiten und <strong>kreativem Problemlösungsansatz</strong> in die <strong>IT-Branche</strong> ein. Mein Werdegang hat mich von den <strong>Geisteswissenschaften</strong> hin zu meiner Leidenschaft für exakte Wissenschaften und <strong>Technologie</strong> geführt, wo ich umfassende Kenntnisse in der <strong>Frontend-Entwicklung</strong> erworben habe. Mit kontinuierlicher Weiterbildung in modernen Frameworks wie <strong>React.js</strong> strebe ich danach, meine technischen Fähigkeiten in einem <strong>dynamischen und innovativen Umfeld</strong> weiterzuentwickeln. Ich bin bereit, einen nachhaltigen Beitrag zur Entwicklung von <strong>digitalen Lösungen</strong> zu leisten und dabei meine Fähigkeiten in einem <strong>engagierten Team</strong> weiter zu verbessern."
   },
   "skills": {
     "title": "Fertigkeiten",
-    "skill1": "Frontend-Entwicklung: JavaScript, HTML5, CSS3",
-    "skill2": "Design-Tools: Figma, Canva, Adobe Photoshop, Adobe Illustrator",
-    "skill3": "Projektmanagement und agile Methoden: Scrum, Kanban",
-    "skill4": "Problemlösung und analytische Fähigkeiten",
-    "skill5": "Software und Tools: Git, VS Code, Google Cloud"
+    "skill1": "<strong>Frontend-Entwicklung:</strong> JavaScript, HTML5, CSS3",
+    "skill2": "<strong>Design-Tools:</strong> Figma, Canva, Adobe Photoshop, Adobe Illustrator",
+    "skill3": "<strong>Projektmanagement und agile Methoden:</strong> Scrum, Kanban",
+    "skill4": "<strong>Problemlösung</strong> und <strong>analytische Fähigkeiten</strong>",
+    "skill5": "<strong>Software und Tools:</strong> Git, VS Code, Google Cloud"
   },
   "projects": {
     "title": "Projekte",
     "project1": {
-      "desc": "Die Webseite für den Friseursalon 'Nuray Bal' in Marburg wurde entwickelt, um die Dienstleistungen und das Ambiente des Salons ansprechend und benutzerfreundlich darzustellen.",
-      "technologiesTitle": "Technologien:",
-      "html": "HTML: Verwendung von semantischem HTML5 für eine klare, zugängliche Struktur und die Implementierung einer Video-Einbettung auf der Startseite.",
-      "css": "CSS: Flexible Techniken mit CSS-Variablen für eine konsistente Farb- und Designpalette, die sich responsiv an verschiedene Bildschirmgrößen anpasst. Übergangseffekte für eine sanfte Benutzererfahrung.",
-      "js": "JavaScript: Dynamische Sprachwechsel und anpassbare Header-Elemente, die das Benutzererlebnis verbessern.",
-      "conclusion": "Fazit: Dieses Projekt demonstriert meine Fähigkeit, professionelle und benutzerfreundliche Webseiten mit modernen Webtechnologien zu erstellen.",
-      "codeBtn": "Code ansehen",
-      "viewBtn": "Projekt ansehen"
+      "desc": "Die Webseite für den Friseursalon \"Nuray Bal\" in Marburg wurde entwickelt, um die Dienstleistungen und das Ambiente des Salons ansprechend und benutzerfreundlich darzustellen.",
+      "technologiesTitle": "<strong>Technologien:</strong>",
+      "html": "<strong>HTML:</strong> Verwendung von semantischem HTML5 für eine klare, zugängliche Struktur und die Implementierung einer Video-Einbettung auf der Startseite.",
+      "css": "<strong>CSS:</strong> Flexible Techniken mit CSS-Variablen für eine konsistente Farb- und Designpalette, die sich responsiv an verschiedene Bildschirmgrößen anpasst. Übergangseffekte für eine sanfte Benutzererfahrung.",
+      "js": "<strong>JavaScript:</strong> Dynamische Sprachwechsel und anpassbare Header-Elemente, die das Benutzererlebnis verbessern.",
+      "conclusion": "<strong>Fazit:</strong> Dieses Projekt demonstriert meine Fähigkeit, professionelle und benutzerfreundliche Webseiten mit modernen Webtechnologien zu erstellen.",
+      "codeBtn": "Code",
+      "viewBtn": "Ansehen"
     },
     "project2": {
       "desc": "Schlafklang ist eine interaktive Webanwendung, die den Benutzern hilft, eine beruhigende Schlafumgebung zu schaffen, indem sie einen Countdown-Timer, ein Hintergrundvideo und Musik nach ihren Vorlieben auswählen.",
-      "technologiesTitle": "Technologien:",
-      "html": "HTML: Klare Strukturierung der Auswahlmöglichkeiten (Timer, Hintergrund und Musik) für eine intuitive Bedienung.",
-      "css": "CSS: Minimalistisches Design mit dunklen Farben und subtilen Animationen, um eine entspannende Atmosphäre zu unterstützen. Flexibilität durch CSS-Variablen.",
-      "js": "JavaScript: Steuerung der Lautstärke und des Vollbildmodus basierend auf der verbleibenden Zeit, was eine nahtlose Benutzererfahrung ermöglicht.",
-      "conclusion": "Fazit: Schlafklang zeigt meine Fähigkeiten in der Entwicklung von interaktiven und benutzerzentrierten Webanwendungen, die funktional und ästhetisch ansprechend sind.",
-      "codeBtn": "Code ansehen",
-      "viewBtn": "Projekt ansehen"
+      "technologiesTitle": "<strong>Technologien:</strong>",
+      "html": "<strong>HTML:</strong> Klare Strukturierung der Auswahlmöglichkeiten (Timer, Hintergrund und Musik) für eine intuitive Bedienung.",
+      "css": "<strong>CSS:</strong> Minimalistisches Design mit dunklen Farben und subtilen Animationen, um eine entspannende Atmosphäre zu unterstützen. Flexibilität durch CSS-Variablen.",
+      "js": "<strong>JavaScript:</strong> Steuerung der Lautstärke und des Vollbildmodus basierend auf der verbleibenden Zeit, was eine nahtlose Benutzererfahrung ermöglicht.",
+      "conclusion": "<strong>Fazit:</strong> Schlafklang zeigt meine Fähigkeiten in der Entwicklung von interaktiven und benutzerzentrierten Webanwendungen, die funktional und ästhetisch ansprechend sind.",
+      "codeBtn": "Code",
+      "viewBtn": "Ansehen"
     },
     "project3": {
       "desc": "Central CAIXA vereint alle Apps, sozialen Netzwerke und Supportkanäle der CAIXA ECONÔMICA FEDERAL an einem Ort. Die App zielt darauf ab, digitale Barrieren zu senken, insbesondere für Nutzer mit geringer digitaler Kompetenz.",
-      "technologiesTitle": "Technologien:",
-      "html": "HTML: Gut strukturierte Abschnitte, die eine intuitive Navigation zwischen Apps, Webseiten und sozialen Netzwerken ermöglichen.",
-      "css": "CSS: Farbliche Unterscheidung zwischen installierten und nicht installierten Apps zur visuellen Führung der Nutzer, unterstützt durch CSS-Animationen und Übergänge.",
-      "js": "JavaScript: Erkennung installierter Apps auf dem Gerät des Nutzers und nahtlose Integration in die entsprechenden App-Stores für Downloads.",
-      "conclusion": "Soziale Verantwortung: Dieses Projekt fördert die digitale Inklusion und erleichtert den Zugang zu wichtigen Diensten für alle Nutzer.",
-      "conclusionFinal": "Fazit: Central CAIXA zeigt meine Fähigkeit, benutzerfreundliche und inklusive Anwendungen zu entwickeln, die einen sozialen Mehrwert bieten.",
-      "codeBtn": "Code ansehen",
-      "viewBtn": "Projekt ansehen"
+      "technologiesTitle": "<strong>Technologien:</strong>",
+      "html": "<strong>HTML:</strong> Gut strukturierte Abschnitte, die eine intuitive Navigation zwischen Apps, Webseiten und sozialen Netzwerken ermöglichen.",
+      "css": "<strong>CSS:</strong> Farbliche Unterscheidung zwischen installierten und nicht installierten Apps zur visuellen Führung der Nutzer, unterstützt durch CSS-Animationen und Übergänge.",
+      "js": "<strong>JavaScript:</strong> Erkennung installierter Apps auf dem Gerät des Nutzers und nahtlose Integration in die entsprechenden App-Stores für Downloads.",
+      "conclusion": "<strong>Soziale Verantwortung:</strong> Dieses Projekt fördert die digitale Inklusion und erleichtert den Zugang zu wichtigen Diensten für alle Nutzer.",
+      "conclusionFinal": "<strong>Fazit:</strong> Central CAIXA zeigt meine Fähigkeit, benutzerfreundliche und inklusive Anwendungen zu entwickeln, die einen sozialen Mehrwert bieten.",
+      "codeBtn": "Code",
+      "viewBtn": "Ansehen"
     },
     "weitereProjekte": {
       "title": "Weitere Projekte",
-      "desc": "Entdecken Sie meine neuesten Projekte, die Innovation und Benutzerfreundlichkeit vereinen.",
-      "viewBtn": "Weitere Projekte ansehen"
+      "desc": "Entdecken Sie meine neuesten Projekte, die Innovation und Benutzerfreundlichkeit vereinen. Klicken Sie hier, um mehr über meine Arbeiten zu erfahren und wie sie den digitalen Alltag bereichern.",
+      "viewBtn": "Weitere Projekte anzeigen"
     }
   },
   "contact": {
@@ -64,11 +70,7 @@
   },
   "downloads": {
     "title": "Downloads",
-    "text": "Hier können Sie meinen Lebenslauf und meine Zertifikate herunterladen:",
-    "items": {
-      "resume": "Lebenslauf herunterladen (PDF)",
-      "certificates": "Diplome und Zertifikate herunterladen (ZIP)"
-    }
+    "text": "Hier können Sie meinen <strong>Lebenslauf</strong> und meine <strong>Zertifikate</strong> herunterladen:"
   },
   "footer": {
     "menu": {
@@ -80,11 +82,5 @@
       "moreProjects": "Weitere Projekte"
     },
     "text": "&copy; 2024 Elderson Luciano Mezzomo - Leidenschaftlicher Frontend-Entwickler aus Marburg, Deutschland."
-  },
-  "general": {
-    "talkBtn": "Lass uns sprechen",
-    "readMoreBtn": "Mehr anzeigen",
-    "readLessBtn": "Weniger anzeigen",
-    "languageTooltip": "Sprache"
   }
 }
