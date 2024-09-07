@@ -1,6 +1,6 @@
 :root {
-    --color-main: #ffcc00;
-    --color-basic: #fbeec1;
-    --color-text: #2c2c2c;
-    --color-acent: #ff3399;
-    }
+    --color-main: #ffcc00; /* Amarelo */
+    --color-basic: #403d39; /* Cinza escuro */
+    --color-text: #f4f1de; /* Bege claro */
+    --color-acent: #8b0000; /* Vermelho profundo */
+}

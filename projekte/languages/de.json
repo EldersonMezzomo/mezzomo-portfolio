@@ -1,0 +1,33 @@
+{
+  "nav": {
+    "about": "Über mich",
+    "fertigkeiten": "Fertigkeiten",
+    "projekte": "Projekte",
+    "kontakt": "Kontakt",
+    "downloads": "Downloads"
+  },
+  "projects": {
+    "title": "Weitere Projekte",
+    "project1": {
+      "desc": "Pomodoro ist eine interaktive Webanwendung, die darauf abzielt, die Produktivität der Benutzer durch die Anwendung der Pomodoro-Technik zu steigern.",
+      "technologiesTitle": "<strong>Technologien:</strong>",
+      "html": "<strong>HTML:</strong> Strukturierung der Benutzeroberfläche mit semantischem HTML für bessere Zugänglichkeit.",
+      "css": "<strong>CSS:</strong> Stilisierung der Anwendung mit responsivem Design.",
+      "js": "<strong>JavaScript:</strong> Implementierung des Timers und der Musiksteuerung.",
+      "conclusion": "<strong>Fazit:</strong> Dieses Projekt zeigt meine Fähigkeit, eine benutzerfreundliche Anwendung zu entwickeln.",
+      "codeBtn": "Code",
+      "viewBtn": "Ansehen"
+    }
+  },
+  "footer": {
+    "menu": {
+      "about": "Über mich",
+      "skills": "Fertigkeiten",
+      "projects": "Projekte",
+      "contact": "Kontakt",
+      "downloads": "Downloads",
+      "moreProjects": "Weitere Projekte"
+    },
+    "text": "&copy; 2024 Elderson Luciano Mezzomo - Leidenschaftlicher Frontend-Entwickler aus Marburg, Deutschland."
+  }
+}

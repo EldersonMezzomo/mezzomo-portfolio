@@ -1,85 +1,159 @@
+// Funções compartilhadas para o menu hambúrguer
 
-
-// Script para o menu hambúrguer
 document.addEventListener('DOMContentLoaded', function () {
     const hamburgerBtn = document.getElementById('hamburger-btn');
     const navMenu = document.querySelector('header nav ul');
-    const menuItems = navMenu.querySelectorAll('li a');
 
-    // Função para abrir/fechar o menu
-    hamburgerBtn.addEventListener('click', function (event) {
-        event.stopPropagation();
-        navMenu.classList.toggle('active');
-    });
+    if (hamburgerBtn && navMenu) {
+        // Função para alternar o estado do menu (abrir/fechar)
+        hamburgerBtn.addEventListener('click', function (event) {
+            event.stopPropagation(); // Impede o fechamento imediato ao clicar no botão
+            navMenu.classList.toggle('active'); // Adiciona ou remove a classe 'active'
+        });
 
-    // Fecha o menu ao clicar em qualquer área fora dele
-    document.addEventListener('click', function (event) {
-        if (!navMenu.contains(event.target) && !hamburgerBtn.contains(event.target)) {
-            if (navMenu.classList.contains('active')) {
-                navMenu.classList.remove('active');
-            }
-        }
-    });
-
-    // Fecha o menu ao clicar em um item de navegação
-    menuItems.forEach(function (menuItem) {
-        menuItem.addEventListener('click', function () {
-            if (navMenu.classList.contains('active')) {
-                navMenu.classList.remove('active');
+        // Função para fechar o menu ao clicar fora dele
+        document.addEventListener('click', function (event) {
+            if (!navMenu.contains(event.target) && !hamburgerBtn.contains(event.target)) {
+                if (navMenu.classList.contains('active')) {
+                    navMenu.classList.remove('active'); // Remove a classe 'active' se o menu estiver aberto
+                }
             }
         });
-    });
+
+        // Fecha o menu ao clicar em qualquer item de navegação
+        const menuItems = navMenu.querySelectorAll('li a');
+        menuItems.forEach(function (menuItem) {
+            menuItem.addEventListener('click', function () {
+                if (navMenu.classList.contains('active')) {
+                    navMenu.classList.remove('active'); // Fecha o menu após clicar em um link
+                }
+            });
+        });
+    }
 });
 
 
+// Funções compartilhadas para a alternância de temas
+document.addEventListener('DOMContentLoaded', function () {
+    const paletteBtn = document.getElementById('palette-btn');
+    const themeStylesheet = document.getElementById('theme-stylesheet'); // Elemento <link> que contém o tema
+    const themes = ['thema-default.css', 'thema-dark.css', 'thema-light.css', 'thema-retro.css', 'thema-futuristic.css'];
+    let currentThemeIndex = 0;
 
-// Script para carregar idiomas
-document.addEventListener("DOMContentLoaded", function () {
-    const currentLangButton = document.getElementById('current-lang');
-    const currentLangText = document.getElementById('current-lang-text');
-    const resumeLink = document.getElementById('resume-link');
-    const certificatesLink = document.getElementById('certificates-link');
-    const langOptions = ['de', 'en', 'pt'];
-    let currentLangIndex = 0;
+    // Caminho para os temas: Verifica se está na página 'projekte' para ajustar o caminho
+    const isProjektePage = document.body.classList.contains('projekte');
+    const themePath = isProjektePage ? '../styles/' : 'styles/';
 
-    // Função para carregar o idioma selecionado
-    function loadLanguage(lang) {
-        fetch(`/languages/${lang}.json`)
+    // Função para alternar entre os temas
+    function switchTheme() {
+        currentThemeIndex = (currentThemeIndex + 1) % themes.length;
+        const newTheme = themes[currentThemeIndex];
+        themeStylesheet.href = `${themePath}${newTheme}`;
+        localStorage.setItem('selectedTheme', newTheme); // Salva o tema selecionado no localStorage
+    }
+
+    // Verifica se o tema foi salvo no localStorage anteriormente
+    const savedTheme = localStorage.getItem('selectedTheme');
+    if (savedTheme) {
+        themeStylesheet.href = `${themePath}${savedTheme}`;
+        currentThemeIndex = themes.indexOf(savedTheme); // Atualiza o índice com base no tema salvo
+    }
+
+    // Adiciona o evento de clique no botão de alternância de temas
+    if (paletteBtn) {
+        paletteBtn.addEventListener('click', switchTheme);
+    }
+});
+
+
+// Função compartilhada para o botão "Leia mais/Leia menos"
+document.addEventListener('DOMContentLoaded', function () {
+
+    // Função para alternar a seta do botão com base no estado expandido/recolhido
+    function toggleButtonArrow(button, isExpanded) {
+        button.textContent = isExpanded ? '▲' : '▼'; // Seta para cima (expandido) e seta para baixo (recolhido)
+    }
+
+    // Função para inicializar os botões de "Leia mais"
+    function initReadMoreButtons() {
+        document.querySelectorAll('.read-more-btn').forEach(button => {
+            const projectDescription = button.previousElementSibling; // A descrição é o elemento anterior ao botão
+
+            // Define o evento de clique no botão
+            button.addEventListener('click', function () {
+                const isExpanded = projectDescription.classList.toggle('expanded'); // Alterna a classe 'expanded'
+                toggleButtonArrow(button, isExpanded); // Atualiza o ícone do botão
+            });
+
+            // Atualiza o ícone do botão ao carregar a página, de acordo com o estado expandido ou não
+            const isExpanded = projectDescription.classList.contains('expanded');
+            toggleButtonArrow(button, isExpanded);  // Atualiza o ícone do botão ao inicializar
+        });
+    }
+
+    // Inicializa os botões de "Leia mais" ao carregar a página
+    initReadMoreButtons();
+});
+
+
+// Função para gerenciamento de idiomas
+document.addEventListener('DOMContentLoaded', function () {
+    const isIndexPage = document.body.classList.contains('index');
+    const isProjektePage = document.body.classList.contains('projekte');
+
+    // Função para obter o idioma salvo ou definir como 'de' por padrão
+    function getCurrentLanguage() {
+        const savedLang = localStorage.getItem('selectedLanguage');
+        return savedLang ? savedLang : 'de';  // Idioma padrão é 'de' (alemão)
+    }
+
+    // Função para salvar o idioma selecionado no localStorage
+    function setCurrentLanguage(lang) {
+        localStorage.setItem('selectedLanguage', lang);
+    }
+
+    // Função para alternar o idioma e recarregar as traduções
+    function switchLanguage() {
+        const currentLang = getCurrentLanguage();
+        const langOptions = ['de', 'en', 'pt'];  // Idiomas disponíveis
+        const nextLang = langOptions[(langOptions.indexOf(currentLang) + 1) % langOptions.length];
+
+        setCurrentLanguage(nextLang);  // Salva o novo idioma
+        document.getElementById('current-lang-text').textContent = nextLang.toUpperCase();  // Atualiza o botão de idioma
+
+        // Carrega as traduções de acordo com a página atual
+        if (isIndexPage) {
+            loadLanguageForIndex();
+        } else if (isProjektePage) {
+            loadLanguageForProjekte();
+        }
+    }
+
+    // Função para carregar o idioma selecionado e aplicar as traduções
+    function loadLanguage(langPath, callback) {
+        fetch(langPath)
             .then(response => response.json())
-            .then(data => applyTranslations(data))
+            .then(data => {
+                callback(data);  // Aplica as traduções
+            })
             .catch(error => console.error('Erro ao carregar o arquivo de idioma:', error));
-
-        updateDownloadLinks(lang);
     }
 
-    function updateDownloadLinks(lang) {
-        const resumeFiles = {
-            'de': 'assets/documents/lebenslauf-frontend-elderson-luciano-mezzomo-v1.pdf',
-            'en': 'assets/documents/resume-frontend-elderson-luciano-mezzomo-v1.pdf',
-            'pt': 'assets/documents/curriculo-frontend-elderson-luciano-mezzomo-v1.pdf'
-        };
-        const certificatesFiles = {
-            'de': 'assets/documents/diplome-und-zertifikate.zip',
-            'en': 'assets/documents/certificates-and-diplomas.zip',
-            'pt': 'assets/documents/diplomas-e-certificados.zip'
-        };
+    // Função que aplica as traduções na página index.html
+    function loadLanguageForIndex() {
+        const currentLang = getCurrentLanguage();
+        const langPath = `/languages/${currentLang}.json`;
 
-        // Atualiza os links
-        resumeLink.href = resumeFiles[lang];
-        certificatesLink.href = certificatesFiles[lang];
+        loadLanguage(langPath, applyTranslationsForIndex);
     }
 
-
-    // Função para aplicar as traduções no site
-    function applyTranslations(translations) {
-        // Navigation Links
+    // Aplica as traduções para a página index.html
+    function applyTranslationsForIndex(translations) {
         document.getElementById('nav-about').innerHTML = translations.nav.about;
         document.getElementById('nav-fertigkeiten').innerHTML = translations.nav.fertigkeiten;
         document.getElementById('nav-projekte').innerHTML = translations.nav.projekte;
         document.getElementById('nav-kontakt').innerHTML = translations.nav.kontakt;
         document.getElementById('nav-downloads').innerHTML = translations.nav.downloads;
-
-        currentLangButton.setAttribute('title', translations.general.languageTooltip);
 
         // About Section
         document.getElementById('about-title').innerHTML = translations.about.title;
@@ -127,6 +201,7 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById('project-3-conclusion-final').innerHTML = translations.projects.project3.conclusionFinal;
         document.getElementById('project-3-code-btn').innerHTML = translations.projects.project3.codeBtn;
         document.getElementById('project-3-view-btn').innerHTML = translations.projects.project3.viewBtn;
+
         document.getElementById('weitere-projekte-title').innerHTML = translations.projects.weitereProjekte.title;
         document.getElementById('project-3-summary').innerHTML = translations.projects.weitereProjekte.desc;
         document.getElementById('weitere-projekte-btn').innerHTML = translations.projects.weitereProjekte.viewBtn;
@@ -141,7 +216,7 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById('download-resume-text').textContent = translations.downloads.resumeText;
         document.getElementById('download-certificates-text').textContent = translations.downloads.certificatesText;
 
-        // Footer Menu Links
+        // Footer
         document.getElementById('footer-about').innerHTML = translations.footer.menu.about;
         document.getElementById('footer-skills').innerHTML = translations.footer.menu.skills;
         document.getElementById('footer-projects').innerHTML = translations.footer.menu.projects;
@@ -149,110 +224,53 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById('footer-downloads').innerHTML = translations.footer.menu.downloads;
         document.getElementById('footer-more-projects').innerHTML = translations.footer.menu.moreProjects;
         document.getElementById('footer-text').innerHTML = translations.footer.text;
-
-        // Atualiza os botões de "Ver mais" e "Ver menos" conforme a linguagem
-        document.querySelectorAll('.read-more-btn').forEach(button => {
-            if (button.parentElement.querySelector('.project-description').classList.contains('expanded')) {
-                button.innerHTML = translations.general.readLessBtn;
-            } else {
-                button.innerHTML = translations.general.readMoreBtn;
-            }
-        });
     }
 
+    // Função que aplica as traduções na página projekte.html
+    function loadLanguageForProjekte() {
+        const currentLang = getCurrentLanguage();
+        const langPath = `./languages/${currentLang}.json`;  // Caminho para as traduções de projekte.html
 
-
-    // Função para alternar para o próximo idioma no ciclo (DE -> EN -> PT)
-    function switchLanguage() {
-        currentLangIndex = (currentLangIndex + 1) % langOptions.length;
-        const newLang = langOptions[currentLangIndex];
-
-        // Atualiza o texto do botão com o novo idioma
-        currentLangText.textContent = newLang.toUpperCase();
-
-        // Carrega o novo idioma
-        loadLanguage(newLang);
-
-        // Salva o idioma escolhido no localStorage
-        localStorage.setItem('selectedLanguage', newLang);
+        loadLanguage(langPath, applyTranslationsForProjekte);
     }
 
-    // Carregar o idioma salvo no localStorage (se houver) ou usar 'de' como padrão
-    const savedLang = localStorage.getItem('selectedLanguage');
-    if (savedLang && langOptions.includes(savedLang)) {
-        currentLangIndex = langOptions.indexOf(savedLang);
-        currentLangText.textContent = savedLang.toUpperCase();
-        loadLanguage(savedLang);
-    } else {
-        loadLanguage('de');
-        currentLangText.textContent = 'DE';
+    // Aplica as traduções para a página projekte.html
+    function applyTranslationsForProjekte(translations) {
+        document.getElementById('nav-about').innerHTML = translations.nav.about;
+        document.getElementById('nav-fertigkeiten').innerHTML = translations.nav.fertigkeiten;
+        document.getElementById('nav-projekte').innerHTML = translations.nav.projekte;
+        document.getElementById('nav-kontakt').innerHTML = translations.nav.kontakt;
+        document.getElementById('nav-downloads').innerHTML = translations.nav.downloads;
+
+        document.getElementById('projekte-projects-title').innerHTML = translations.projects.title;
+        document.getElementById('projekte-project-1-desc').innerHTML = translations.projects.project1.desc;
+        document.getElementById('projekte-project-1-technologies-title').innerHTML = translations.projects.project1.technologiesTitle;
+        document.getElementById('projekte-project-1-html').innerHTML = translations.projects.project1.html;
+        document.getElementById('projekte-project-1-css').innerHTML = translations.projects.project1.css;
+        document.getElementById('projekte-project-1-js').innerHTML = translations.projects.project1.js;
+        document.getElementById('projekte-project-1-conclusion').innerHTML = translations.projects.project1.conclusion;
+        document.getElementById('projekte-project-1-code-btn').innerHTML = translations.projects.project1.codeBtn;
+        document.getElementById('projekte-project-1-view-btn').innerHTML = translations.projects.project1.viewBtn;
+
+        document.getElementById('footer-about').innerHTML = translations.footer.menu.about;
+        document.getElementById('footer-skills').innerHTML = translations.footer.menu.skills;
+        document.getElementById('footer-projects').innerHTML = translations.footer.menu.projects;
+        document.getElementById('footer-contact').innerHTML = translations.footer.menu.contact;
+        document.getElementById('footer-downloads').innerHTML = translations.footer.menu.downloads;
+        document.getElementById('footer-more-projects').innerHTML = translations.footer.menu.moreProjects;
+        document.getElementById('footer-text').innerHTML = translations.footer.text;
     }
 
-    // Adiciona o evento de clique no botão de idioma para alternar o idioma
-    currentLangButton.addEventListener('click', switchLanguage);
-});
-
-
-
-// Alternância de temas:
-document.addEventListener('DOMContentLoaded', function () {
-    const paletteBtn = document.getElementById('palette-btn');
-    const themeStylesheet = document.getElementById('theme-stylesheet');
-    const themes = ['thema-default.css', 'thema-dark.css', 'thema-light.css', 'thema-retro.css', 'thema-futuristic.css'];
-    let currentThemeIndex = 0;
-
-    // Verifica se a página está na pasta "projekte"
-    const isOtherProjectsPage = window.location.pathname.includes("projekte");
-
-    // Define o caminho correto para a pasta "styles"
-    const themePath = isOtherProjectsPage ? '../styles/' : 'styles/';
-
-    // Função para alternar entre os temas
-    function switchTheme() {
-        currentThemeIndex = (currentThemeIndex + 1) % themes.length;
-        const newTheme = themes[currentThemeIndex];
-
-        // Atualiza o href do link para carregar o novo tema a partir da pasta "styles"
-        themeStylesheet.href = `${themePath}${newTheme}`;
-
-        // Salva o tema selecionado no localStorage para lembrar na próxima visita
-        localStorage.setItem('selectedTheme', newTheme);
+    // Carrega a tradução correta ao carregar a página
+    if (isIndexPage) {
+        loadLanguageForIndex();
+    } else if (isProjektePage) {
+        loadLanguageForProjekte();
     }
 
-    // Carregar o tema salvo no localStorage, se houver
-    const savedTheme = localStorage.getItem('selectedTheme');
-    if (savedTheme) {
-        themeStylesheet.href = `${themePath}${savedTheme}`;
-        currentThemeIndex = themes.indexOf(savedTheme);
-    }
+    // Adiciona o evento de troca de idioma
+    document.getElementById('current-lang').addEventListener('click', switchLanguage);
 
-    // Adicionar evento de clique ao botão de paleta para alternar entre os temas
-    paletteBtn.addEventListener('click', switchTheme);
-});
-
-
-
-
-// Script para botão "Ver mais" e "Ver menos"
-const translations = {
-    'en': { more: 'Read More', less: 'Read Less' },
-    'pt': { more: 'Ver mais', less: 'Ver menos' },
-    'de': { more: 'Mehr anzeigen', less: 'Weniger anzeigen' }
-};
-
-document.querySelectorAll('.read-more-btn').forEach(button => {
-    button.addEventListener('click', function () {
-        const projectDescription = this.previousElementSibling;
-        projectDescription.classList.toggle('expanded');
-
-        // Obter o idioma atual da página dinamicamente
-        let currentLang = document.getElementById('current-lang-text').textContent.toLowerCase();
-
-        // Atualiza o texto do botão com base no idioma atual
-        if (projectDescription.classList.contains('expanded')) {
-            this.textContent = translations[currentLang].less;
-        } else {
-            this.textContent = translations[currentLang].more;
-        }
-    });
+    // Define o idioma inicial ao carregar a página
+    document.getElementById('current-lang-text').textContent = getCurrentLanguage().toUpperCase();
 });

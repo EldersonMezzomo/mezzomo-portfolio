@@ -8,9 +8,9 @@
 /* Color and Size Variables */
 :root {
     --color-main: #2a9d8f;
-    --color-basic: #f4f1de;
+    --color-basic: #fcf7e8;
     --color-text: #1d3557;
-    --color-acent: #e76f51;
+    --color-acent: #d1495b;
 
     --font-family: "KorbRegular", "Source Sans Pro", Helvetica, sans-serif;
     --font-size-base: 1.2rem;
