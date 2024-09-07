@@ -72,7 +72,9 @@
     "title": "Herunterladen",
     "text": "Hier können Sie meinen <strong>Lebenslauf</strong> und meine <strong>Zertifikate</strong> herunterladen:",
     "resumeText": "Lebenslauf herunterladen (PDF)",
-    "certificatesText": "Zertifikate und Diplome herunterladen (ZIP)"
+    "certificatesText": "Zertifikate und Diplome herunterladen (ZIP)",
+    "resumeFile": "lebenslauf-frontend-elderson-luciano-mezzomo-v1.pdf",
+    "certificatesFile": "diplome-und-zertifikate.zip"
   },
   "footer": {
     "menu": {

@@ -68,11 +68,13 @@
     "title": "Contato",
     "text": "Você pode me contatar pelos seguintes canais:"
   },
-    "downloads": {
-      "title": "Downloads",
-      "text": "Aqui você pode baixar meu <strong>currículo</strong> e meus <strong>certificados</strong>:",
-      "resumeText": "Baixar currículo (PDF)",
-      "certificatesText": "Baixar certificados e diplomas (ZIP)"
+  "downloads": {
+    "title": "Download",
+    "text": "Aqui você pode baixar o meu <strong>Currículo</strong> e meus <strong>Certificados</strong>:",
+    "resumeText": "Baixar Currículo (PDF)",
+    "certificatesText": "Baixar Certificados e Diplomas (ZIP)",
+    "resumeFile": "curriculo-frontend-elderson-luciano-mezzomo-v1.pdf",
+    "certificatesFile": "diplomas-e-certificados.zip"
   },
   "footer": {
     "menu": {

@@ -68,11 +68,13 @@
     "title": "Contact",
     "text": "You can reach me through the following channels:"
   },
-    "downloads": {
-      "title": "Downloads",
-      "text": "Here you can download my <strong>resume</strong> and <strong>certificates</strong>:",
-      "resumeText": "Download resume (PDF)",
-      "certificatesText": "Download certificates and diplomas (ZIP)"
+  "downloads": {
+    "title": "Download",
+    "text": "Here you can download my <strong>Resume</strong> and my <strong>Certificates</strong>:",
+    "resumeText": "Download Resume (PDF)",
+    "certificatesText": "Download Certificates and Diplomas (ZIP)",
+    "resumeFile": "resume-frontend-elderson-luciano-mezzomo-v1.pdf",
+    "certificatesFile": "certificates-and-diplomas.zip"
   },
   "footer": {
     "menu": {

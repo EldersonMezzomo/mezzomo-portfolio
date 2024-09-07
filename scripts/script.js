@@ -65,7 +65,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
-
 // Função compartilhada para o botão "Leia mais/Leia menos"
 document.addEventListener('DOMContentLoaded', function () {
 
@@ -215,6 +214,8 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById('downloads-text').innerHTML = translations.downloads.text;
         document.getElementById('download-resume-text').textContent = translations.downloads.resumeText;
         document.getElementById('download-certificates-text').textContent = translations.downloads.certificatesText;
+        document.getElementById('resume-link').href = `assets/documents/${translations.downloads.resumeFile}`;
+        document.getElementById('certificates-link').href = `assets/documents/${translations.downloads.certificatesFile}`;
 
         // Footer
         document.getElementById('footer-about').innerHTML = translations.footer.menu.about;
