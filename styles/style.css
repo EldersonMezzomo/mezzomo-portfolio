@@ -56,7 +56,7 @@ header {
     background-color: var(--color-main);
     padding: var(--header-padding);
     position: fixed;
-    width: 100%;
+    width: 100vw;
     top: 0;
     left: 0;
     z-index: 1000;
@@ -296,7 +296,7 @@ h2::after {
 .about-text {
     max-width: 100%;
     flex: 2;
-    margin-left: 1.25rem;
+    margin-left: 0;
 }
 
 .about-text h1 {
@@ -328,7 +328,6 @@ h2::after {
 .talk-btn:hover {
     background-color: var(--color-acent);
 }
-
 
 /* General Link Styling */
 ul li a {
@@ -436,6 +435,7 @@ ul.custom-bullets li::before {
 .project-buttons {
     display: flex;
     gap: 0.625rem;
+    margin-top: 2rem;
 }
 
 .project-buttons .btn {
@@ -697,12 +697,19 @@ footer p {
     transition: all 0.3s;
 }
 
-/* Media Queries for Screens up to 768px (Tablets) */
-@media (max-width: 768px) {
+
+
+
+/* Media Queries for Screens up to 800px (Tablets) */
+@media (max-width: 800px) {
 
     /* Display the hamburger menu button on smaller screens */
     .hamburger {
         display: flex;
+        margin-left: 15px;
+        /* Trazendo para a esquerda */
+        position: relative;
+        /* Garante que ele fique relativo à tela */
     }
 
     /* Position the language selector next to the hamburger menu */
@@ -736,12 +743,12 @@ footer p {
         margin-top: 10px;
     }
 
-    .container {
-        padding: 0 10px;
+    header .container {
+        padding: 0 20px;
     }
 
-    header .container {
-        padding: 0 10px;
+    .container {
+        padding: 0 20px;
     }
 
     h2 {
@@ -750,8 +757,21 @@ footer p {
         margin-bottom: 30px;
     }
 
+    h3 {
+        margin: 20px 0;
+    }
+
     .talk-btn {
-        width: 60%;
+        width: 54%;
+        display: block;
+        margin: 20px auto 0;
+    }
+
+    #weitere-projekte-btn {
+        flex: none;
+        width: 68%;
+        display: block;
+        margin: 20px auto 0;
     }
 
     .project {
@@ -769,7 +789,7 @@ footer p {
 
     .profile-photo img {
         margin-right: 0;
-        margin-bottom: 20px;
+        margin-bottom: 35px;
     }
 
     header nav ul {
@@ -781,22 +801,64 @@ footer p {
         margin-left: 0;
         margin-top: 10px;
     }
+
+    .about-text {
+        margin-left: 0;
+    }
+
+    footer {
+        padding: 20px;
+    }
+
+    .footer-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-menu li:not(:last-child)::after {
+        content: none;
+    }
+
+    footer p,
+    .footer-menu li a {
+        font-size: 1rem;
+        /* Ajusta o tamanho da fonte para ser um pouco menor */
+    }
 }
+
+
+
 
 /* Media Queries for Screens up to 414px (Smartphones) */
 @media (max-width: 414px) {
+
+    :root {
+        --font-size-base: 1.1rem;
+    }
+
+
+
     .container {
-        padding: 0 5px;
+        padding: 0 15px;
     }
 
     header .container {
-        padding: 0 5px;
+        padding: 0 15px;
     }
 
     h2 {
-        font-size: 1.8rem;
-        margin-top: 80px;
+        font-size: 1.6rem;
+        margin-top: 100px;
         margin-bottom: 20px;
+    }
+
+    .project-details h3 {
+        font-size: 1.3rem;
+        margin: 20px 0;
+    }
+
+    .project-details p {
+        font-size: 1.1rem;
     }
 
     .talk-btn {
@@ -805,11 +867,17 @@ footer p {
 
     .project-buttons .btn {
         padding: 10px 5px;
+        margin-top: 2rem;
     }
 
     .project-description {
-        max-height: 4.5rem;
+        max-height: 5.5rem;
     }
+
+    #weitere-projekte-btn {
+        margin: 80px auto 0;
+    }
+
 
     .about-content {
         padding: 0 10px;
