@@ -7,15 +7,15 @@ document.addEventListener('DOMContentLoaded', function () {
     if (hamburgerBtn && navMenu) {
         // Função para alternar o estado do menu (abrir/fechar)
         hamburgerBtn.addEventListener('click', function (event) {
-            event.stopPropagation(); // Impede o fechamento imediato ao clicar no botão
-            navMenu.classList.toggle('active'); // Adiciona ou remove a classe 'active'
+            event.stopPropagation();
+            navMenu.classList.toggle('active');
         });
 
         // Função para fechar o menu ao clicar fora dele
         document.addEventListener('click', function (event) {
             if (!navMenu.contains(event.target) && !hamburgerBtn.contains(event.target)) {
                 if (navMenu.classList.contains('active')) {
-                    navMenu.classList.remove('active'); // Remove a classe 'active' se o menu estiver aberto
+                    navMenu.classList.remove('active');
                 }
             }
         });
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
         menuItems.forEach(function (menuItem) {
             menuItem.addEventListener('click', function () {
                 if (navMenu.classList.contains('active')) {
-                    navMenu.classList.remove('active'); // Fecha o menu após clicar em um link
+                    navMenu.classList.remove('active');
                 }
             });
         });
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
 // Funções compartilhadas para a alternância de temas
 document.addEventListener('DOMContentLoaded', function () {
     const paletteBtn = document.getElementById('palette-btn');
-    const themeStylesheet = document.getElementById('theme-stylesheet'); // Elemento <link> que contém o tema
+    const themeStylesheet = document.getElementById('theme-stylesheet');
     const themes = ['thema-default.css', 'thema-dark.css', 'thema-light.css', 'thema-retro.css', 'thema-futuristic.css'];
     let currentThemeIndex = 0;
 
@@ -49,14 +49,14 @@ document.addEventListener('DOMContentLoaded', function () {
         currentThemeIndex = (currentThemeIndex + 1) % themes.length;
         const newTheme = themes[currentThemeIndex];
         themeStylesheet.href = `${themePath}${newTheme}`;
-        localStorage.setItem('selectedTheme', newTheme); // Salva o tema selecionado no localStorage
+        localStorage.setItem('selectedTheme', newTheme);
     }
 
     // Verifica se o tema foi salvo no localStorage anteriormente
     const savedTheme = localStorage.getItem('selectedTheme');
     if (savedTheme) {
         themeStylesheet.href = `${themePath}${savedTheme}`;
-        currentThemeIndex = themes.indexOf(savedTheme); // Atualiza o índice com base no tema salvo
+        currentThemeIndex = themes.indexOf(savedTheme);
     }
 
     // Adiciona o evento de clique no botão de alternância de temas
@@ -70,23 +70,23 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Função para alternar a seta do botão com base no estado expandido/recolhido
     function toggleButtonArrow(button, isExpanded) {
-        button.textContent = isExpanded ? '▲' : '▼'; // Seta para cima (expandido) e seta para baixo (recolhido)
+        button.textContent = isExpanded ? '▲' : '▼';
     }
 
     // Função para inicializar os botões de "Leia mais"
     function initReadMoreButtons() {
         document.querySelectorAll('.read-more-btn').forEach(button => {
-            const projectDescription = button.previousElementSibling; // A descrição é o elemento anterior ao botão
+            const projectDescription = button.previousElementSibling;
 
             // Define o evento de clique no botão
             button.addEventListener('click', function () {
-                const isExpanded = projectDescription.classList.toggle('expanded'); // Alterna a classe 'expanded'
-                toggleButtonArrow(button, isExpanded); // Atualiza o ícone do botão
+                const isExpanded = projectDescription.classList.toggle('expanded');
+                toggleButtonArrow(button, isExpanded);
             });
 
             // Atualiza o ícone do botão ao carregar a página, de acordo com o estado expandido ou não
             const isExpanded = projectDescription.classList.contains('expanded');
-            toggleButtonArrow(button, isExpanded);  // Atualiza o ícone do botão ao inicializar
+            toggleButtonArrow(button, isExpanded);
         });
     }
 
@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Função para obter o idioma salvo ou definir como 'de' por padrão
     function getCurrentLanguage() {
         const savedLang = localStorage.getItem('selectedLanguage');
-        return savedLang ? savedLang : 'de';  // Idioma padrão é 'de' (alemão)
+        return savedLang ? savedLang : 'de';
     }
 
     // Função para salvar o idioma selecionado no localStorage
@@ -114,11 +114,11 @@ document.addEventListener('DOMContentLoaded', function () {
     // Função para alternar o idioma e recarregar as traduções
     function switchLanguage() {
         const currentLang = getCurrentLanguage();
-        const langOptions = ['de', 'en', 'pt'];  // Idiomas disponíveis
+        const langOptions = ['de', 'en', 'pt'];
         const nextLang = langOptions[(langOptions.indexOf(currentLang) + 1) % langOptions.length];
 
-        setCurrentLanguage(nextLang);  // Salva o novo idioma
-        document.getElementById('current-lang-text').textContent = nextLang.toUpperCase();  // Atualiza o botão de idioma
+        setCurrentLanguage(nextLang);
+        document.getElementById('current-lang-text').textContent = nextLang.toUpperCase();
 
         // Carrega as traduções de acordo com a página atual
         if (isIndexPage) {
@@ -133,7 +133,7 @@ document.addEventListener('DOMContentLoaded', function () {
         fetch(langPath)
             .then(response => response.json())
             .then(data => {
-                callback(data);  // Aplica as traduções
+                callback(data);
             })
             .catch(error => console.error('Erro ao carregar o arquivo de idioma:', error));
     }
@@ -230,7 +230,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Função que aplica as traduções na página projekte.html
     function loadLanguageForProjekte() {
         const currentLang = getCurrentLanguage();
-        const langPath = `./languages/${currentLang}.json`;  // Caminho para as traduções de projekte.html
+        const langPath = `./languages/${currentLang}.json`;
 
         loadLanguage(langPath, applyTranslationsForProjekte);
     }

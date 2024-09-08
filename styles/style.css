@@ -123,7 +123,6 @@ header nav ul li a:hover {
     color: var(--color-acent);
 }
 
-
 /* Contêiner para os botões de ação (paleta e idioma) */
 .menu-actions {
     display: flex;
@@ -148,31 +147,13 @@ header nav ul li a:hover {
     color: var(--color-acent);
 }
 
-/* revisar menu de idioma */
-
-
+/* Language Selector Styles */
 .language-selector {
+    position: relative;
     display: flex;
     gap: 10px;
     align-items: center;
     margin-left: 20px;
-}
-
-.lang-btn {
-    background: none;
-    border: none;
-    cursor: pointer;
-    color: var(--color-basic);
-    display: flex;
-    align-items: center;
-    transition: color 0.3s ease;
-    margin-left: 12px;
-}
-
-/* Language Selector Styles */
-.language-selector {
-    position: relative;
-    display: inline-block;
 }
 
 #current-lang {
@@ -202,22 +183,14 @@ header nav ul li a:hover {
     font-size: 1rem;
 }
 
-.lang-options {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: var(--color-basic);
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    padding: 10px 0;
-    z-index: 1000;
-}
-
-.lang-options .lang-btn {
+.lang-btn {
     background: none;
     border: none;
     cursor: pointer;
-    padding: 5px 10px;
+    color: var(--color-basic);
+    align-items: center;
+    transition: color 0.3s ease;
+    margin-left: 12px;
     display: block;
     font-size: 1rem;
 }
@@ -251,7 +224,6 @@ h2::after {
 
 .main-heading {
     font-size: var(--font-size-lg);
-    /* Tamanho igual ao h2 */
     font-weight: 400;
     color: var(--color-main);
     margin-top: 9rem;
@@ -285,12 +257,10 @@ h2::after {
     margin-right: 1.25rem;
     box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
-    /* Adiciona transição suave */
 }
 
 .profile-photo img:hover {
     transform: scale(1.05);
-    /* Aumenta 5% ao passar o mouse */
 }
 
 .about-text {
@@ -466,7 +436,6 @@ ul.custom-bullets li::before {
     font-size: 0.8rem;
     box-sizing: border-box;
 }
-
 
 .code {
     overflow: hidden;
@@ -699,7 +668,6 @@ footer p {
 
 
 
-
 /* Media Queries for Screens up to 800px (Tablets) */
 @media (max-width: 800px) {
 
@@ -707,9 +675,7 @@ footer p {
     .hamburger {
         display: flex;
         margin-left: 15px;
-        /* Trazendo para a esquerda */
         position: relative;
-        /* Garante que ele fique relativo à tela */
     }
 
     /* Position the language selector next to the hamburger menu */
@@ -822,7 +788,6 @@ footer p {
     footer p,
     .footer-menu li a {
         font-size: 1rem;
-        /* Ajusta o tamanho da fonte para ser um pouco menor */
     }
 }
 
@@ -835,8 +800,6 @@ footer p {
     :root {
         --font-size-base: 1.1rem;
     }
-
-
 
     .container {
         padding: 0 15px;
