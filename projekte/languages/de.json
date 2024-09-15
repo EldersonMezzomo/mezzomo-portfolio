@@ -9,12 +9,24 @@
   "projects": {
     "title": "Weitere Projekte",
     "project1": {
-      "desc": "Pomodoro ist eine interaktive Webanwendung, die darauf abzielt, die Produktivität der Benutzer durch die Anwendung der Pomodoro-Technik zu steigern.",
+      "title": "Pomodoro",
+      "desc": "Pomodoro ist eine interaktive Webanwendung, die darauf abzielt, die Produktivität der Benutzer durch die Anwendung der Pomodoro-Technik zu steigern. Die Anwendung bietet einen benutzerfreundlichen Timer, der in 25-minütige Arbeitsintervalle und 5-minütige Pausen unterteilt ist. Darüber hinaus können Benutzer aus einer Vielzahl von Hintergrundmusiken wählen, um eine angenehme und konzentrierte Arbeitsatmosphäre zu schaffen.",
       "technologiesTitle": "<strong>Technologien:</strong>",
       "html": "<strong>HTML:</strong> Strukturierung der Benutzeroberfläche mit semantischem HTML für bessere Zugänglichkeit.",
-      "css": "<strong>CSS:</strong> Stilisierung der Anwendung mit responsivem Design.",
-      "js": "<strong>JavaScript:</strong> Implementierung des Timers und der Musiksteuerung.",
-      "conclusion": "<strong>Fazit:</strong> Dieses Projekt zeigt meine Fähigkeit, eine benutzerfreundliche Anwendung zu entwickeln.",
+      "css": "<strong>CSS:</strong> Stilisierung der Anwendung mit responsivem Design, das auf verschiedenen Geräten gut aussieht.",
+      "js": "<strong>JavaScript:</strong> Implementierung des Timers und der Musiksteuerung, die den Benutzer während der Arbeit unterstützt.",
+      "conclusion": "<strong>Fazit:</strong> Dieses Projekt zeigt meine Fähigkeit, eine funktionale und benutzerfreundliche Anwendung zu entwickeln, die das Zeitmanagement durch die Pomodoro-Technik optimiert.",
+      "codeBtn": "Code",
+      "viewBtn": "Ansehen"
+    },
+    "project2": {
+      "title": "R24 Frontend-Test Aufgabe",
+      "desc": "Ein interaktives Frontend-Projekt, das eine Webanwendung mit einem minimalistischen Apple-inspirierten Design implementiert. Es bietet Drag-and-Drop-Funktionalität, Materialauswahl und dynamische Dateneingabe.",
+      "technologiesTitle": "<strong>Technologien:</strong>",
+      "html": "<strong>Vue.js:</strong> Erstellen von interaktiven und dynamischen Komponenten für eine nahtlose Benutzererfahrung.",
+      "css": "<strong>CSS:</strong> Apple-inspiriertes Design mit abgerundeten Ecken, Animationen und einer sauberen Benutzeroberfläche.",
+      "js": "<strong>JavaScript:</strong> Implementierung der Drag-and-Drop-Funktionalität und dynamische Dateneingabe.",
+      "conclusion": "<strong>Fazit:</strong> Dieses Projekt zeigt meine Fähigkeit, komplexe interaktive Webanwendungen mit modernen JavaScript-Frameworks wie Vue.js zu erstellen.",
       "codeBtn": "Code",
       "viewBtn": "Ansehen"
     }

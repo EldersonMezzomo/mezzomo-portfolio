@@ -243,6 +243,18 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById('nav-kontakt').innerHTML = translations.nav.kontakt;
         document.getElementById('nav-downloads').innerHTML = translations.nav.downloads;
 
+        // Projekt 2: R24
+        document.getElementById('projekte-project-r24-title').innerHTML = translations.projects.project2.title;
+        document.getElementById('projekte-project-r24-desc').innerHTML = translations.projects.project2.desc;
+        document.getElementById('projekte-project-r24-technologies-title').innerHTML = translations.projects.project2.technologiesTitle;
+        document.getElementById('projekte-project-r24-html').innerHTML = translations.projects.project2.html;
+        document.getElementById('projekte-project-r24-css').innerHTML = translations.projects.project2.css;
+        document.getElementById('projekte-project-r24-js').innerHTML = translations.projects.project2.js;
+        document.getElementById('projekte-project-r24-conclusion').innerHTML = translations.projects.project2.conclusion;
+        document.getElementById('projekte-project-r24-code-btn').innerHTML = translations.projects.project2.codeBtn;
+        document.getElementById('projekte-project-r24-view-btn').innerHTML = translations.projects.project2.viewBtn;
+
+        // Projekt 1: Pomodoro
         document.getElementById('projekte-projects-title').innerHTML = translations.projects.title;
         document.getElementById('projekte-project-1-desc').innerHTML = translations.projects.project1.desc;
         document.getElementById('projekte-project-1-technologies-title').innerHTML = translations.projects.project1.technologiesTitle;
@@ -253,6 +265,7 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById('projekte-project-1-code-btn').innerHTML = translations.projects.project1.codeBtn;
         document.getElementById('projekte-project-1-view-btn').innerHTML = translations.projects.project1.viewBtn;
 
+        // Footer
         document.getElementById('footer-about').innerHTML = translations.footer.menu.about;
         document.getElementById('footer-skills').innerHTML = translations.footer.menu.skills;
         document.getElementById('footer-projects').innerHTML = translations.footer.menu.projects;

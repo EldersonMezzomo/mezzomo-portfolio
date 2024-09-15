@@ -9,12 +9,24 @@
   "projects": {
     "title": "Mais Projetos",
     "project1": {
-      "desc": "Pomodoro é uma aplicação web interativa desenvolvida para aumentar a produtividade dos usuários utilizando a técnica Pomodoro.",
+      "title": "Pomodoro",
+      "desc": "Pomodoro é uma aplicação web interativa desenvolvida para aumentar a produtividade dos usuários utilizando a técnica Pomodoro. A aplicação oferece um temporizador fácil de usar, dividido em intervalos de 25 minutos de trabalho e pausas de 5 minutos. Além disso, os usuários podem escolher entre uma variedade de músicas de fundo para criar um ambiente de trabalho agradável e focado.",
       "technologiesTitle": "<strong>Tecnologias:</strong>",
       "html": "<strong>HTML:</strong> Estruturação da interface de usuário com HTML semântico para melhor acessibilidade.",
-      "css": "<strong>CSS:</strong> Estilização da aplicação com design responsivo.",
-      "js": "<strong>JavaScript:</strong> Implementação do temporizador e controle de música.",
-      "conclusion": "<strong>Conclusão:</strong> Este projeto demonstra minha capacidade de desenvolver uma aplicação funcional e amigável.",
+      "css": "<strong>CSS:</strong> Estilização da aplicação com design responsivo, que fica bem em diferentes dispositivos.",
+      "js": "<strong>JavaScript:</strong> Implementação do temporizador e controle de música, que auxiliam o usuário durante o trabalho.",
+      "conclusion": "<strong>Conclusão:</strong> Este projeto demonstra minha capacidade de desenvolver uma aplicação funcional e amigável, otimizando o gerenciamento de tempo com a técnica Pomodoro.",
+      "codeBtn": "Código",
+      "viewBtn": "Ver"
+    },
+    "project2": {
+      "title": "Tarefa de Teste de Frontend R24",
+      "desc": "Um projeto frontend interativo que implementa uma aplicação web com design minimalista inspirado pela Apple. Ele oferece funcionalidade de arrastar e soltar, seleção de materiais e entrada de dados dinâmica.",
+      "technologiesTitle": "<strong>Tecnologias:</strong>",
+      "html": "<strong>Vue.js:</strong> Criação de componentes interativos e dinâmicos para uma experiência de usuário fluida.",
+      "css": "<strong>CSS:</strong> Design inspirado pela Apple com bordas arredondadas, animações e uma interface de usuário limpa.",
+      "js": "<strong>JavaScript:</strong> Implementação da funcionalidade de arrastar e soltar e entrada de dados dinâmica.",
+      "conclusion": "<strong>Conclusão:</strong> Este projeto demonstra minha habilidade em criar aplicações web interativas e complexas com frameworks JavaScript modernos como o Vue.js.",
       "codeBtn": "Código",
       "viewBtn": "Ver"
     }

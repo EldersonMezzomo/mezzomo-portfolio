@@ -9,12 +9,24 @@
   "projects": {
     "title": "More Projects",
     "project1": {
-      "desc": "Pomodoro is an interactive web application designed to enhance user productivity using the Pomodoro technique.",
+      "title": "Pomodoro",
+      "desc": "Pomodoro is an interactive web application designed to enhance user productivity by applying the Pomodoro technique. The application offers a user-friendly timer divided into 25-minute work intervals and 5-minute breaks. Additionally, users can choose from a variety of background music to create a pleasant and focused work atmosphere.",
       "technologiesTitle": "<strong>Technologies:</strong>",
       "html": "<strong>HTML:</strong> Structuring the user interface with semantic HTML for better accessibility.",
-      "css": "<strong>CSS:</strong> Styling the application with responsive design.",
-      "js": "<strong>JavaScript:</strong> Implementing the timer and music control.",
-      "conclusion": "<strong>Conclusion:</strong> This project demonstrates my ability to develop a functional and user-friendly application.",
+      "css": "<strong>CSS:</strong> Styling the application with responsive design that looks good across different devices.",
+      "js": "<strong>JavaScript:</strong> Implementing the timer and music control to help users during work sessions.",
+      "conclusion": "<strong>Conclusion:</strong> This project demonstrates my ability to develop a functional and user-friendly application that optimizes time management using the Pomodoro technique.",
+      "codeBtn": "Code",
+      "viewBtn": "View"
+    },
+    "project2": {
+      "title": "R24 Frontend Test Task",
+      "desc": "An interactive frontend project that implements a web application with a minimalist Apple-inspired design. It features drag-and-drop functionality, material selection, and dynamic data input.",
+      "technologiesTitle": "<strong>Technologies:</strong>",
+      "html": "<strong>Vue.js:</strong> Creating interactive and dynamic components for a seamless user experience.",
+      "css": "<strong>CSS:</strong> Apple-inspired design with rounded corners, animations, and a clean user interface.",
+      "js": "<strong>JavaScript:</strong> Implementing drag-and-drop functionality and dynamic data input.",
+      "conclusion": "<strong>Conclusion:</strong> This project showcases my ability to build complex interactive web applications using modern JavaScript frameworks like Vue.js.",
       "codeBtn": "Code",
       "viewBtn": "View"
     }
